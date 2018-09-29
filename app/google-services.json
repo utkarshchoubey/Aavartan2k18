@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "140098710793",
+    "firebase_url": "https://aavartan2017-44e56.firebaseio.com",
+    "project_id": "aavartan2017-44e56",
+    "storage_bucket": "aavartan2017-44e56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140098710793:android:81ca3f3d187bd871",
+        "android_client_info": {
+          "package_name": "com.technocracy.app.aavartan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140098710793-1aaqm0pjl6kb35e393nha334o5r76q9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technocracy.app.aavartan",
+            "certificate_hash": "87b206f9a00205e1a661b7a866b9b7cbb0ce0e16"
+          }
+        },
+        {
+          "client_id": "140098710793-d8nrctv2ii9sr8ietgsnd8iu55la8hik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF_JquXHZimLnjUodJTPcPWUjJMH2Eabw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140098710793-d8nrctv2ii9sr8ietgsnd8iu55la8hik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

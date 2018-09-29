@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:backgroundTint="@color/lightback"
+            app:titleTextColor="@color/title"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line"
+            android:background="@color/title"
+            android:layout_below="@+id/toolbar"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/lightback"
+            android:textStyle="bold"
+            android:text="Problem Statements"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/line1"
+            android:layout_marginLeft="72dp"
+            android:background="@color/title"
+            android:layout_below="@+id/textView"
+            android:layout_marginRight="70dp"/>
+
+        <android.support.v4.view.ViewPager
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/viewPager">
+
+        </android.support.v4.view.ViewPager>
+     
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/sliderdots"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/viewPager">
+
+        </LinearLayout>
+
+</RelativeLayout>
