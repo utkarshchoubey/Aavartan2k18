@@ -14,20 +14,13 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="?attr/actionBarSize"
         android:layout_marginTop="?attr/actionBarSize"
-        android:background="#000000">
+        android:background="@drawable/image">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <pl.droidsonroids.gif.GifImageView
-                android:id="@+id/gifImageView"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:background="@drawable/giphy" />
+
         </RelativeLayout>
     </FrameLayout>
 
@@ -91,8 +84,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="78dp"
                 android:gravity="center"
-                android:text="AAVARTAN'17"
-                android:textColor="#80D8FF"
+                android:text="AAVARTAN'18"
+                android:textColor="@color/white"
                 android:textSize="25dp"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -115,21 +108,14 @@
                 android:background="@drawable/image"
                 app:titleTextColor="#00FFFFFF" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_above="@id/bottom_navigation"
-                android:layout_below="@+id/toolbar"
-                android:background="@mipmap/main_back">
 
-            </RelativeLayout>
 
             <android.support.design.widget.BottomNavigationView
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="@color/lightback"
+                android:background="@color/grey"
                 app:itemIconTint="@drawable/nav_item_colors"
                 app:itemTextColor="@drawable/nav_item_colors"
                 app:menu="@menu/menu_bottom_navigation" />

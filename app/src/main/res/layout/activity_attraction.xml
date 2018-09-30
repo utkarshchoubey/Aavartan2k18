@@ -23,7 +23,7 @@
             android:layout_height="?attr/actionBarSize"
             android:backgroundTint="@color/lightback"
             android:theme="@style/ThemeOverlay.AppCompat.Light"
-            app:titleTextColor="@color/title">
+            app:titleTextColor="@color/white">
 
             </android.support.v7.widget.Toolbar>
         <View
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/toolbar1"
-            android:background="@color/title" />
+            android:background="@color/white" />
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
