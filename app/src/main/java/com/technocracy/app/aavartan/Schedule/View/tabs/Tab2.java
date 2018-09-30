@@ -13,6 +13,7 @@ import android.widget.ProgressBar;
 
 import com.technocracy.app.aavartan.Event.Model.Data.Event;
 import com.technocracy.app.aavartan.R;
+import com.technocracy.app.aavartan.Schedule.Model.MockScheduleProvider;
 import com.technocracy.app.aavartan.Schedule.Model.RetrofitScheduleProvider;
 import com.technocracy.app.aavartan.Schedule.Presenter.SchedulePresenter;
 import com.technocracy.app.aavartan.Schedule.Presenter.SchedulePresenterImpl;
@@ -42,7 +43,7 @@ public class Tab2 extends Fragment implements ScheduleView {
         recyclerView.setLayoutManager(mLayoutManager);
         //scheduleList = db.getScheduleDay2Items();
         progressBar = (ProgressBar) v.findViewById(R.id.progress_bar_tab2);
-        presenter = new SchedulePresenterImpl(new RetrofitScheduleProvider(), this, getActivity());
+        presenter = new SchedulePresenterImpl(new MockScheduleProvider(), this, getActivity());
         presenter.getSchedule("8");
         return v;
     }

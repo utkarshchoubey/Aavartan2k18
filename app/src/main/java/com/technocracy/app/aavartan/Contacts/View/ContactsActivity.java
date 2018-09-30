@@ -13,6 +13,7 @@ import android.widget.GridView;
 import android.widget.ProgressBar;
 
 import com.technocracy.app.aavartan.Contacts.Model.Data.Contact;
+import com.technocracy.app.aavartan.Contacts.Model.MockContactProvider;
 import com.technocracy.app.aavartan.Contacts.Model.RetrofitContactProvider;
 import com.technocracy.app.aavartan.Contacts.Presenter.ContactPresenter;
 import com.technocracy.app.aavartan.Contacts.Presenter.ContactPresenterImpl;
@@ -52,7 +53,8 @@ public class ContactsActivity extends AppCompatActivity implements ContactView {
         db = new DatabaseHandler(getApplicationContext());
         contactsGridView = (GridView) findViewById(R.id.contacts_gridView);
 
-        presenter = new ContactPresenterImpl(this, new RetrofitContactProvider(), this);
+        presenter = new ContactPresenterImpl(this, new MockContactProvider(), this);
+//        presenter = new ContactPresenterImpl(this, new RetrofitContactProvider(), this);
         presenter.getContact(type);
     }
 

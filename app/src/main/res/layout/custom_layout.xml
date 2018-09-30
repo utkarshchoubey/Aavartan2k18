@@ -28,7 +28,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:backgroundTint="@color/lightback"
+                android:backgroundTint="@color/grey"
                 android:clickable="true"
                 android:scaleType="fitXY" />
             <TextView
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/thumbnail"
-                android:background="@color/lightback"
+                android:background="@color/grey"
                 android:gravity="center_horizontal"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="25dp"

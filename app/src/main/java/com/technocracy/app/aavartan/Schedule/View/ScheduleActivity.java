@@ -116,8 +116,8 @@ public class ScheduleActivity extends ActionBarActivity {
         viewPager.setAdapter(adapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.getTabAt(0).setText("7 October");
-        tabLayout.getTabAt(1).setText("8 October");
+        tabLayout.getTabAt(0).setText("6 October");
+        tabLayout.getTabAt(1).setText("7 October");
     }
 }
 

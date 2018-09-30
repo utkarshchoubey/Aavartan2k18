@@ -16,7 +16,7 @@
         android:background="@null"
         android:theme="@style/AppTheme.AppBarOverlay"
         android:title="My Events"
-        android:titleTextColor="@color/title"
+        android:titleTextColor="@color/yellow3"
         app:popupTheme="@style/AppTheme.AppBarOverlay" />
 
     <android.support.v4.widget.SwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -45,7 +45,7 @@
         android:padding="10dp"
         android:text="You have not registered for any events yet."
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/white"
+        android:textColor="@color/yellow3"
         android:textSize="30dp"
         android:visibility="gone" />
 
