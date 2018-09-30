@@ -38,6 +38,7 @@ public class Tab1 extends Fragment implements ScheduleView {
         v = inflater.inflate(R.layout.tab_1, container, false);
         db = new DatabaseHandler(getActivity());
         recyclerView = (RecyclerView) v.findViewById(R.id.recycler_view);
+//        recyclerView.setLayoutManager(new VegaLayoutManager());
         mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
         progressBar = (ProgressBar) v.findViewById(R.id.progress_bar_tab1);

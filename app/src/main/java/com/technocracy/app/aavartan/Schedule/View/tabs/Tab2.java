@@ -37,6 +37,7 @@ public class Tab2 extends Fragment implements ScheduleView {
         v = inflater.inflate(R.layout.tab_2, container, false);
         db = new DatabaseHandler(getActivity());
         recyclerView = (RecyclerView) v.findViewById(R.id.recycler_view);
+//        recyclerView.setLayoutManager(new VegaLayoutManager());
         mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
         //scheduleList = db.getScheduleDay2Items();

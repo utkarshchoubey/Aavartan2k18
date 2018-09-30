@@ -12,6 +12,7 @@ apply plugin: 'io.fabric'
 
 repositories {
     maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://jitpack.io" }
 }
 
 
@@ -20,8 +21,6 @@ android {
         config {
             keyAlias 'mohit'
             keyPassword 'technocracy2015'
-            //storeFile file('C:/Users/divya/Documents/Android/Keystores/dextra.jks')
-            //storeFile file('C:/Users/MOHIT/AndroidStudioProjects/OfficialKey.jks')
             storePassword 'technocracy2015'
         }
         lintOptions {
@@ -47,11 +46,15 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.sdsmdg.harjot:rotatingtext:1.0.2'
+    compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    compile 'com.yalantis:flipviewpager:1.0.0'
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
     compile 'com.github.glomadrian:Grav:1.1'
+    compile 'com.yanzhikai:TextPathView:0.1.3'
     compile 'com.android.support:cardview-v7:25.3.1'
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     compile 'com.veinhorn.scrollgalleryview:library:1.0.5'
@@ -67,8 +70,9 @@ dependencies {
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
     testCompile 'junit:junit:4.12'
     compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
-        transitive = true;
+        transitive = true
     }
-
+    compile 'com.github.kanytu:android-parallax-recyclerview:v1.7'
+//    compile 'com.stone.vega.library:VegaLayoutManager:1.0.6'
 }
 apply plugin: 'com.google.gms.google-services'

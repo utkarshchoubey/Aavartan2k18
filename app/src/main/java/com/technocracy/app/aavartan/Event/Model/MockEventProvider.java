@@ -25,29 +25,71 @@ public class MockEventProvider implements EventProvider {
 
     private EventData getMockEventData() {
         List<Event> eventList = new ArrayList<>();
-        String type ="fun",image_url="urls.com";
+        Event event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
         mockData = new EventData(true, "Success!", eventList);
         return mockData;
     }
 
     @Override
-    public void getFunEvent(EventCallback callback) {
-
+    public void getFunEvent(final EventCallback callback) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                callback.onSuccess(getMockEventData());
+            }
+        }, 500);
     }
 
     @Override
-    public void getManagerialEvent(EventCallback callback) {
-
+    public void getManagerialEvent(final EventCallback callback) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                callback.onSuccess(getMockEventData());
+            }
+        }, 500);
     }
 
     @Override
-    public void getTechEvent(EventCallback callback) {
-
+    public void getTechEvent(final EventCallback callback) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                callback.onSuccess(getMockEventData());
+            }
+        }, 500);
     }
 
     @Override
-    public void getRoboEvent(EventCallback callback) {
-
+    public void getRoboEvent(final EventCallback callback) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                callback.onSuccess(getMockEventData());
+            }
+        }, 500);
     }
 
     @Override

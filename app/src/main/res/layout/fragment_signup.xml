@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@color/colorblack"
+    android:background="#000"
     android:id="@+id/linear"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,7 +15,6 @@
         android:fillViewport="true"
         android:isScrollContainer="true">
     <LinearLayout
-        android:background="#15161d"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -86,11 +85,11 @@
             android:inputType="textEmailAddress"
             android:drawableStart="@drawable/email2"
             android:drawableLeft="@drawable/email2"
-            android:textColor="@color/white"
+            android:textColor="@color/yellow3"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:hint="Email"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/yellow3"
             android:drawablePadding="10dp"
             android:padding="10dp"
             android:layout_width="300dp"
@@ -172,7 +171,7 @@
             android:background="@drawable/button_bg_rounded_corners"
             android:padding="10dp"
             android:text="SIGN UP"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/yellow3"
             android:textSize="25dp" />
         </LinearLayout>
     </ScrollView>

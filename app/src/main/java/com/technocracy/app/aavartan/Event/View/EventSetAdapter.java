@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.squareup.picasso.Callback;
@@ -24,6 +25,7 @@ public class EventSetAdapter extends RecyclerView.Adapter<EventSetAdapter.EventT
     private Intent intent;
     private View view;
 
+
     public EventSetAdapter(Context context) {
         mContext = context;
     }
@@ -35,9 +37,9 @@ public class EventSetAdapter extends RecyclerView.Adapter<EventSetAdapter.EventT
 
     @Override
     public void onBindViewHolder(final EventTypeHolder holder, final int position) {
-        int width = (int) App.getScreenWidth(mContext);
-        holder.imageView.getLayoutParams().height = width / 2;
-        holder.imageView.getLayoutParams().width = width;
+//        int width = (int) App.getScreenWidth(mContext);
+//        holder.imageView.getLayoutParams().height = width / 2;
+//        holder.imageView.getLayoutParams().width = width;
         holder.imageView.requestLayout();
         Picasso.with(mContext).load("www.abhi.co.in").placeholder(img[position]).
                 into(holder.imageView, new Callback() {

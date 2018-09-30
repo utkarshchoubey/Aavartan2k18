@@ -5,7 +5,7 @@
     android:id="@+id/relativeLayout_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image"
+    android:background="#000"
     tools:context=".activity.MainActivity">
 
     <FrameLayout
@@ -14,12 +14,11 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="?attr/actionBarSize"
         android:layout_marginTop="?attr/actionBarSize"
-        android:background="#000000">
+        android:background="#000">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/gifImageView"
                 android:layout_width="250dp"
@@ -28,6 +27,7 @@
                 android:layout_centerVertical="true"
                 android:layout_gravity="center"
                 android:background="@drawable/giphy" />
+
         </RelativeLayout>
     </FrameLayout>
 
@@ -43,10 +43,10 @@
                 android:id="@+id/bmb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/typewriter1"
                 android:layout_alignParentBottom="true"
-                android:layout_alignRight="@+id/typewriter1"
-                android:layout_marginBottom="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="63dp"
+                android:layout_marginEnd="14dp"
                 app:bmb_backgroundEffect="@bool/default_bmb_background_effect"
                 app:bmb_buttonEnum="textOutsideCircle"
                 app:bmb_buttonPlaceEnum="buttonPlace_sc_6_4"
@@ -67,34 +67,23 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <com.technocracy.app.aavartan.activity.Typewriter
-                android:id="@+id/typewriter1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/text"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="17dp"
-                android:gravity="center"
-                android:textColor="#80D8FF"
-                android:textSize="20dp"
-                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/text"
+            <yanzhikai.textpath.AsyncTextPathView
+                android:id="@+id/atpv_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="78dp"
-                android:gravity="center"
-                android:text="AAVARTAN'17"
-                android:textColor="#80D8FF"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                app:duration="3000"
+                app:showPainter="true"
+                app:text="AAVARTAN 18"
+                android:layout_marginTop="80dp"
+                app:repeat="RESTART"
+                app:paintStrokeColor="@color/yellow3"
+                app:pathStrokeColor="@color/yellow3"
+                app:textInCenter="true"
+                app:textSize="40sp"
+                android:layout_gravity="center_horizontal"
+                />
+
         </RelativeLayout>
     </FrameLayout>
 
@@ -112,24 +101,17 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@drawable/image"
+                android:background="#000"
                 app:titleTextColor="#00FFFFFF" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_above="@id/bottom_navigation"
-                android:layout_below="@+id/toolbar"
-                android:background="@mipmap/main_back">
 
-            </RelativeLayout>
 
             <android.support.design.widget.BottomNavigationView
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="@color/lightback"
+                android:background="#000"
                 app:itemIconTint="@drawable/nav_item_colors"
                 app:itemTextColor="@drawable/nav_item_colors"
                 app:menu="@menu/menu_bottom_navigation" />

@@ -31,8 +31,8 @@
             android:elevation="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabTextColor="@color/colorPrimary"
-            app:tabSelectedTextColor="@color/title"
+            app:tabTextColor="@color/yellow3"
+            app:tabSelectedTextColor="@color/yellow2"
             android:backgroundTint="@color/lightback"/>
 
         <android.support.v4.view.ViewPager
@@ -45,7 +45,7 @@
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/lightback"
+            android:background="@color/black"
             android:layout_alignParentBottom="true"
             app:itemIconTint="@drawable/nav_item_colors"
             app:itemTextColor="@drawable/nav_item_colors"
