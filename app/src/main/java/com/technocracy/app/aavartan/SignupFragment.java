@@ -81,8 +81,7 @@ public class SignupFragment extends Fragment {
         password0EditText = (EditText) getView().findViewById(R.id.password0);
         password1EditText = (EditText) getView().findViewById(R.id.password1);
         emailEditText = (EditText) getView().findViewById(R.id.email);
-        captcha = (EditText) getView().findViewById(R.id.captcha);
-        capimg = (ImageView) getView().findViewById(R.id.capimg);
+
         Picasso.with(getContext())
                 .load("https://beta.aavartan.org/captcha.show")
                 .resize(200, 100)

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:background="@color/black"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:padding="10dp"
+            android:src="@drawable/logo_welcome" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="ABOUT"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Started in 2007 with the aim of inspiring technology, innovation and scientific thinking, AAVARTAN is now accepted as Central India’s Largest Science and Technological fest with a footfall of more than 10,000 yearly and a reach of over 150+ Indian Colleges."
+            android:textAlignment="center"
+            android:textColor="@color/yellow3"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
