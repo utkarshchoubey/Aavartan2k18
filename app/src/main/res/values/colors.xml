@@ -11,6 +11,7 @@
     <color name="divider">#ffffff</color>
     <color name="colorblack">#000000</color>
     <color name="white">#ffffff</color>
+    <color name="grey">#545049</color>
     <color name="colorsecondary">#000000</color>
     <color name="primary_material_dark_1">#000000</color>
     <color name="primary_dark_material_dark">#000000</color>
