@@ -47,6 +47,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.sdsmdg.harjot:rotatingtext:1.0.2'
+    compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    compile 'com.yalantis:flipviewpager:1.0.0'
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
