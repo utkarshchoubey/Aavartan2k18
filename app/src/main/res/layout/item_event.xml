@@ -37,7 +37,7 @@
                 android:padding="8dp"
                 android:text="AAvaartan"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#000000"
+                android:textColor="@color/yellow2"
                 android:textStyle="bold" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:paddingRight="8dp"
                 android:text="Date Venue Time"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textColor="@color/yellow3" />
 
         </LinearLayout>
 

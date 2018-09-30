@@ -85,7 +85,7 @@ public class SignupFragment extends Fragment {
 
 // =======
 //     //    captcha = (EditText) getView().findViewById(R.id.captcha);
-//         capimg = (ImageView) getView().findViewById(R.id.capimg);
+           capimg = (ImageView) getView().findViewById(R.id.capimg);
 // >>>>>>> master
         Picasso.with(getContext())
                 .load("https://beta.aavartan.org/captcha.show")
