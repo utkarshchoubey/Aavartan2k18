@@ -17,7 +17,7 @@ public class App {
     public static final String LOGIN_URL = "http://aavartan.org/appApi_2Ksixteen/login.php";
     public static final String FORGOT_PASSWORD_URL = "http://aavartan.org/appApi_2Ksixteen/forgetPassword.php";
 
-    public static final String ATTRACTIONS_URL = "app.android.attractions";
+    public static final String ATTRACTIONS_URL = "app-android-attractions";
 
     //Vigyaan
     public static final String ArchiPDF = "https://aavartan.org/vigyaan-assets/archi.pdf";
@@ -40,19 +40,19 @@ public class App {
     public static final int NOTIFICATION_ID = 100;
     public static final int NOTIFICATION_ID_BIG_IMAGE = 101;
     public static final int SWIPE_REFRESH_COLORS[] = {R.color.colorPrimary, R.color.colorAccent};
-    public static final String GALLERY = "app.android.gallery";
-    public static final String SCHEDULE1 = "app.android.schedule/7";
-    public static final String CONTACT = "app.android.contacts";
-    public static final String SCHEDULE2 = "app.android.schedule/8";
-    public static final String FUN_EVENT = "app.android.events/1";
-    public static final String MANAGERIAL_EVENT = "app.android.events/2";
-    public static final String TECHNICAL_EVENT = "app.android.events/3";
-    public static final String ROBOTICS_EVENT = "app.android.events/4";
-    public static final String SPONSORS_URL = "app.android.sponsors";
-    public static final String EVENT_REGISTER = "app.android.event.register";
-    public static final String CONTACT_APP = "app.android.android.team";
+    public static final String GALLERY = "app-android-gallery";
+    public static final String SCHEDULE1 = "app-android-schedule/7";
+    public static final String CONTACT = "app-android-contacts";
+    public static final String SCHEDULE2 = "app-android-schedule/8";
+    public static final String FUN_EVENT = "app-android-events/1";
+    public static final String MANAGERIAL_EVENT = "app-android-events/2";
+    public static final String TECHNICAL_EVENT = "app-android-events/3";
+    public static final String ROBOTICS_EVENT = "app-android-events/4";
+    public static final String SPONSORS_URL = "app-android-sponsors";
+    public static final String EVENT_REGISTER = "app-android-event.register";
+    public static final String CONTACT_APP = "app-android-android.team";
     public static String LinkPDF;
-    public static String Base_Url = "https://aavartan.org:8000/";
+    public static String Base_Url = "http://aavartan.org:8000/";
 
     public static float getScreenWidth(Context context) {
         DisplayMetrics displaymetrics = new DisplayMetrics();

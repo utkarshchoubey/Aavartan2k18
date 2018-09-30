@@ -48,10 +48,11 @@
                 android:layout_marginBottom="63dp"
                 android:layout_marginEnd="14dp"
                 app:bmb_backgroundEffect="@bool/default_bmb_background_effect"
-                app:bmb_buttonEnum="textOutsideCircle"
-                app:bmb_buttonPlaceEnum="buttonPlace_sc_6_4"
-                app:bmb_normalColor="#80D8FF"
-                app:bmb_piecePlaceEnum="piecePlace_dot_6_3" />
+                app:bmb_buttonEnum="ham"
+                app:bmb_buttonPlaceEnum="buttonPlace_ham_6"
+                app:bmb_normalColor="#FFFFFF"
+                app:bmb_piecePlaceEnum="piecePlace_ham_6"
+                app:bmb_rippleEffect="true" />
 
             <com.technocracy.app.aavartan.activity.Typewriter
                 android:id="@+id/typewriter"

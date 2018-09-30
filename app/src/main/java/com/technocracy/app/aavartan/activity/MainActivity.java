@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -13,8 +14,8 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.nightonke.boommenu.BoomButtons.HamButton;
 import com.nightonke.boommenu.BoomButtons.OnBMClickListener;
-import com.nightonke.boommenu.BoomButtons.TextOutsideCircleButton;
 import com.nightonke.boommenu.BoomMenuButton;
 import com.technocracy.app.aavartan.Attraction.View.AttractionActivity;
 import com.technocracy.app.aavartan.Contacts.View.ContactsActivity;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     private Intent intent;
     private AsyncTextPathView text;
     private String intent_name[] = {"Gallery", "Sponsors", "Contacts", "App Team", "About Us", "Vigyaan"};
+    private String subnormal_text[] = {"Here the exciting pics of aavartan!!", "Supporting us in our vision", "We are here!",
+            "Team behind this master piece", "Our history, present and future", "The Science Exhibition"};
     private int icons[] = {R.drawable.ic_photo_library_black_24dp, R.drawable.spons, R.drawable.ic_account_box_24dp,
             R.drawable.ic_group_black_24dp, R.drawable.ic_accessibility_black_24dp, R.drawable.ic_highlight_black_24dp};
 
@@ -107,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         });
         BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
         for (int i = 0; i < bmb.getPiecePlaceEnum().pieceNumber(); i++) {
-            TextOutsideCircleButton.Builder builder = new TextOutsideCircleButton.Builder()
+            HamButton.Builder builder = new HamButton.Builder()
                     .listener(new OnBMClickListener() {
                         @Override
                         public void onBoomButtonClick(int index) {
@@ -116,8 +119,8 @@ public class MainActivity extends AppCompatActivity {
                                 intent2 = new Intent(MainActivity.this, GalleryActivity.class);
                                 startActivity(intent2);
                                 overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
-                              //  Snackbar.make(findViewById(R.id.relativeLayout_main), "This feature is currently unavailable!App will be updated soon", Snackbar.LENGTH_LONG)
-                               //         .setAction("Action", null).show();
+                                //  Snackbar.make(findViewById(R.id.relativeLayout_main), "This feature is currently unavailable!App will be updated soon", Snackbar.LENGTH_LONG)
+                                //         .setAction("Action", null).show();
                             } else if (index == 1) {
                                 intent2 = new Intent(MainActivity.this, SponsActivity.class);
                                 startActivity(intent2);
@@ -146,12 +149,13 @@ public class MainActivity extends AppCompatActivity {
                         }
                     })
                     .normalImageRes(icons[i])
-                    .normalText(intent_name[i])
-                    .rotateImage(true)
-                    .shadowEffect(true)
+                    .normalText(intent_name[i]).
+                            subNormalText(subnormal_text[i])
+                    .subTextGravity(Gravity.CENTER)
+                    .rotateImage(true).subTypeface(Typeface.SERIF)
                     .imagePadding(new Rect(2, 2, 2, 2))
                     .textGravity(Gravity.CENTER)
-                    .rippleEffect(true).normalColor(R.color.white).textGravity(Gravity.CENTER).textSize(15).maxLines(2);
+                    .rippleEffect(true).normalColor(R.color.black).textGravity(Gravity.CENTER).textSize(15).maxLines(2);
             bmb.addBuilder(builder);
         }
 
