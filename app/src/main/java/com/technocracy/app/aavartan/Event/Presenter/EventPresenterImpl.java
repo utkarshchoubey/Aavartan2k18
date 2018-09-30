@@ -109,11 +109,14 @@ public class EventPresenterImpl implements EventPresenter {
                 @Override
                 public void onSuccess(EventData body) {
                     view.showProgressBar(false);
-                    if (body.isSuccess()) {
-                        view.showEvents(body.getEventList());
-                    } else {
-                        view.showEventsFromDatabase();
-                        view.showMessage(body.getMessage());
+                    if(body!=null)
+                    {
+                        if (body.isSuccess()) {
+                            view.showEvents(body.getEventList());
+                        } else {
+                            view.showEventsFromDatabase();
+                            view.showMessage(body.getMessage());
+                        }
                     }
                 }
             });

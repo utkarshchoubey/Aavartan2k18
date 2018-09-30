@@ -74,5 +74,6 @@ dependencies {
         transitive = true
     }
     compile 'com.github.kanytu:android-parallax-recyclerview:v1.7'
+//    compile 'com.stone.vega.library:VegaLayoutManager:1.0.6'
 }
 apply plugin: 'com.google.gms.google-services'

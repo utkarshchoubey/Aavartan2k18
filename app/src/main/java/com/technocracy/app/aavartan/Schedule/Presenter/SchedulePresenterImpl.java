@@ -27,11 +27,14 @@ public class SchedulePresenterImpl implements SchedulePresenter {
                 @Override
                 public void onSuccess(ScheduleData body) {
                     view.showProgressBar(false);
-                    if (body.isSuccess()) {
-                        view.showSchedule(body.getSchedule());
-                    } else {
-                        view.showScheduleFromDatabase();
-                        view.showMessage(body.getMessage() + "In Success False!");
+                    if(body!=null)
+                    {
+                        if (body.isSuccess()) {
+                            view.showSchedule(body.getSchedule());
+                        } else {
+                            view.showScheduleFromDatabase();
+                            view.showMessage(body.getMessage() + "In Success False!");
+                        }
                     }
                 }
 
@@ -47,11 +50,14 @@ public class SchedulePresenterImpl implements SchedulePresenter {
                 @Override
                 public void onSuccess(ScheduleData body) {
                     view.showProgressBar(false);
-                    if (body.isSuccess()) {
-                        view.showSchedule(body.getSchedule());
-                    } else {
-                        view.showScheduleFromDatabase();
-                        view.showMessage(body.getMessage());
+                    if(body!=null)
+                    {
+                        if (body.isSuccess()) {
+                            view.showSchedule(body.getSchedule());
+                        } else {
+                            view.showScheduleFromDatabase();
+                            view.showMessage(body.getMessage());
+                        }
                     }
                 }
 

@@ -25,16 +25,14 @@ public class MockEventProvider implements EventProvider {
 
     private EventData getMockEventData() {
         List<Event> eventList = new ArrayList<>();
-        Event event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        Event event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
         eventList.add(event);
-        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
-        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
         eventList.add(event);
-        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
         eventList.add(event);
-        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
-        eventList.add(event);
-        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
         eventList.add(event);
         event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
         eventList.add(event);
@@ -48,7 +46,8 @@ public class MockEventProvider implements EventProvider {
         eventList.add(event);
         event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
         eventList.add(event);
-        String type ="fun",image_url="urls.com";
+        event = new Event(1, "A", "ABC", "fun", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
         mockData = new EventData(true, "Success!", eventList);
         return mockData;
     }
@@ -71,7 +70,6 @@ public class MockEventProvider implements EventProvider {
                 callback.onSuccess(getMockEventData());
             }
         }, 500);
-
     }
 
     @Override
