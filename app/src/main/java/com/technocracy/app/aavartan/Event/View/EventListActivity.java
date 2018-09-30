@@ -33,7 +33,7 @@ public class EventListActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Events");
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view_event_set);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true));
         EventSetAdapter adapter = new EventSetAdapter(this);
         recyclerView.setAdapter(adapter);
 
