@@ -7,7 +7,8 @@
     <string name="title_activity_vigyaan">Vigyaan</string>
     <string name="action_Login">User Area</string>
     <string name="action_notif">Notifications</string>
-
+    <string name="next">NEXT</string>
+    <string name="start">GOT IT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="nav_item_home">Home</string>
     <string name="nav_item_events">Events</string>
