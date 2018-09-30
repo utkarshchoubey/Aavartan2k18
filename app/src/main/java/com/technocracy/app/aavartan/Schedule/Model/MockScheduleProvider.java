@@ -6,6 +6,8 @@ import com.technocracy.app.aavartan.Event.Model.Data.Event;
 import com.technocracy.app.aavartan.Schedule.Model.Data.ScheduleData;
 import com.technocracy.app.aavartan.Schedule.ScheduleCallback;
 
+import java.util.ArrayList;
+
 public class MockScheduleProvider implements ScheduleProvider {
 
     private ScheduleData mockScheduleData;
@@ -34,11 +36,30 @@ public class MockScheduleProvider implements ScheduleProvider {
     }
 
     public ScheduleData getMockScheduleData(String day) {
-        if (day.equals("7")) {
-
-        } else {
-        }
-        //mockScheduleData = new ScheduleData(true, "Success", list);
+        Event event;
+        ArrayList<Event> eventList = new ArrayList<>();
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+        event = new Event(1, "A", "ABC", "tech", "6-7 Oct", "5-6 PM", "AA jaoo jhaa bhi hai", "http://www.appimage", "5-6-10", "7-8-10");
+        eventList.add(event);
+//        if (day.equals("7")) {
+//        } else {
+//        }
+        mockScheduleData = new ScheduleData(true, "Success", eventList);
         return mockScheduleData;
     }
 }

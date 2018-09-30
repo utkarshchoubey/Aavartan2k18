@@ -137,7 +137,7 @@ public class EventActivity extends AppCompatActivity implements EventView {
             stringAdapter.setParallaxHeader(getLayoutInflater().inflate(R.layout.event_recycler_header_fun, recyclerView, false), recyclerView);
         else if (eventSetId.equals("robo"))
             stringAdapter.setParallaxHeader(getLayoutInflater().inflate(R.layout.event_recycler_header_robo, recyclerView, false), recyclerView);
-        else if (eventSetId.equals("fun"))
+        else if (eventSetId.equals("tech"))
             stringAdapter.setParallaxHeader(getLayoutInflater().inflate(R.layout.event_recycler_header_tech, recyclerView, false), recyclerView);
         else if (eventSetId.equals("manager"))
             stringAdapter.setParallaxHeader(getLayoutInflater().inflate(R.layout.event_recycler_header_managerial, recyclerView, false), recyclerView);
