@@ -34,6 +34,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
         super.onSaveInstanceState(oldInstanceState);
         oldInstanceState.clear();
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +42,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
-     //   presenter = new GalleryPresenterImpl(this, new RetrofitGalleryProvider(), this);
+        //   presenter = new GalleryPresenterImpl(this, new RetrofitGalleryProvider(), this);
         presenter = new GalleryPresenterImpl(this, new RetrofitGalleryProvider(), this);
         presenter.getImages();
 
@@ -66,11 +67,13 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
         else
             progressBar.setVisibility(View.GONE);
     }
+
     @Override
     public void showMessage(String message) {
         Snackbar.make(findViewById(R.id.gallery_rel_layout), message, Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show();
     }
+
     @Override
     public void loadGallery(List<Image> imageList) {
         List<MediaInfo> infos = new ArrayList<>(imageList.size());
@@ -83,6 +86,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
                 .setFragmentManager(getSupportFragmentManager())
                 .addMedia(infos);
     }
+
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(GalleryActivity.this, MainActivity.class);
