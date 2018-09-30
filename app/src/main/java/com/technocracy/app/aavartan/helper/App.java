@@ -52,7 +52,7 @@ public class App {
     public static final String EVENT_REGISTER = "app.android.event.register";
     public static final String CONTACT_APP = "app.android.android.team";
     public static String LinkPDF;
-    public static String Base_Url = "https://beta.aavartan.org/";
+    public static String Base_Url = "https://aavartan.org:8000/";
 
     public static float getScreenWidth(Context context) {
         DisplayMetrics displaymetrics = new DisplayMetrics();

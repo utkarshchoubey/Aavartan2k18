@@ -1,5 +1,6 @@
 package com.technocracy.app.aavartan.fcm;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.IntentCompat;
@@ -60,6 +61,7 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
         notification.getImageUrl());
     }
 
+   @SuppressLint("WrongConstant")
    private void showNotificationMessage(Context context, String title, String message, String timeStamp, Intent intent, String imageUrl) {
         notificationUtils = new NotificationUtils(context);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | IntentCompat.FLAG_ACTIVITY_CLEAR_TASK | IntentCompat.FLAG_ACTIVITY_TASK_ON_HOME);

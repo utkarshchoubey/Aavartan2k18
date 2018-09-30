@@ -98,15 +98,14 @@ public class SignupFragment extends Fragment {
                 final String email = emailEditText.getText().toString().trim();
                 final String college = collegeEditText.getText().toString().trim();
                 final String phone = phoneEditText.getText().toString().trim();
-                final String captchastr = captcha.getText().toString().trim();
+//             final String captchastr = captcha.getText().toString().trim();
 
                 if (!first_name.isEmpty() && !last_name.isEmpty() && !password0.isEmpty()
-                        && !password1.isEmpty() && !email.isEmpty() && !college.isEmpty() && !phone.isEmpty() &&
-                        !captchastr.isEmpty()) {
+                        && !password1.isEmpty() && !email.isEmpty() && !college.isEmpty() && !phone.isEmpty()) {
                     if (password0.equals(password1)) {
                         if (password0.length() > 5) {
                             if (phone.length() == 10) {
-                                registerUser(first_name, last_name, college, email, phone, password0, password1, captchastr);
+                                registerUser(first_name, last_name, college, email, phone, password0, password1);
                             } else {
                                 Snackbar.make(getActivity().findViewById(R.id.linear), "Enter a valid 10 digit phone number.", Snackbar.LENGTH_LONG).show();
                             }
@@ -126,14 +125,14 @@ public class SignupFragment extends Fragment {
 
     private void registerUser(final String firstName, final String lastName, final String college,
                               final String email, final String mobile, final String password,
-                              final String confirm_password, final String captcha) {
+                              final String confirm_password) {
         // Tag used to cancel the request
         String tag_string_req = "req_register";
         pDialog.setMessage("Registering ...");
         showDialog();
 
         StringRequest strReq = new StringRequest(Request.Method.POST,
-                "https://beta.aavartan.org/app.android.register", new Response.Listener<String>() {
+                "http://aavartan.org:8000/app-android-register", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d("ayush", "Register Response: " + response.toString());
