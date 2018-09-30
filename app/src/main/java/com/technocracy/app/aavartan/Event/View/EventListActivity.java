@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.technocracy.app.aavartan.Attraction.View.AttractionActivity;
 import com.technocracy.app.aavartan.R;
@@ -25,6 +28,7 @@ public class EventListActivity extends AppCompatActivity {
     private Intent intent;
     private RecyclerView recyclerView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +40,6 @@ public class EventListActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         EventSetAdapter adapter = new EventSetAdapter(this);
         recyclerView.setAdapter(adapter);
-
         final BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         BottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
         //bottomNavigationView.setItemBackgroundResource(R.color.white);
@@ -74,7 +77,6 @@ public class EventListActivity extends AppCompatActivity {
             }
         });
         Menu menu = bottomNavigationView.getMenu();
-
         for (int i = 0, size = menu.size(); i < size; i++) {
             MenuItem item = menu.getItem(i);
             if (i == 1)

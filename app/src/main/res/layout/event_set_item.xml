@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginBottom="97dp"
         android:backgroundTint="@color/lightback"
         android:elevation="3dp"
         card_view:cardCornerRadius="6dp">
@@ -19,15 +21,17 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/lightback"
+            android:layout_gravity="center_vertical"
+            android:background="@color/grey"
             android:paddingTop="5dp">
 
             <ImageView
                 android:id="@+id/event_set_img"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:scaleType="fitXY" />
@@ -48,5 +52,15 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sliderdots"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/card_view">
 
-</LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

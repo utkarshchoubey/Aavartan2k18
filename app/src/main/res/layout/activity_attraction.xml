@@ -61,6 +61,7 @@
                     android:layout_height="0dp"
                     android:layout_alignParentBottom="true"
                     android:layout_weight="0.1"
+                    android:background="#000"
                     app:itemIconTint="@drawable/nav_item_colors"
                     app:itemTextColor="@drawable/nav_item_colors"
                     app:menu="@menu/menu_bottom_navigation" />
