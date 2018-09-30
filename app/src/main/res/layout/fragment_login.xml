@@ -35,7 +35,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="53dp"
-                android:textColorHint="@color/white">
+                android:textColorHint="@color/yellow3">
 
                 <EditText
                     android:id="@+id/etUsername"
@@ -50,14 +50,14 @@
                     android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:padding="10dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white" />
+                    android:textColor="@color/yellow3"
+                    android:textColorHint="@color/yellow3" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="53dp"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/yellow3"
                 android:layout_weight="0.08">
 
                 <EditText
@@ -73,8 +73,8 @@
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:padding="10dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white" />
+                    android:textColor="@color/yellow3"
+                    android:textColorHint="@color/yellow3" />
             </android.support.design.widget.TextInputLayout>
 
             <Button
@@ -102,6 +102,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_marginTop="10dp"
+                android:textColor="@color/yellow3"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
                 android:text="Credentials for both app and website are same"/>
