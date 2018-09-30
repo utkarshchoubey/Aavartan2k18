@@ -19,7 +19,7 @@ import android.widget.TextView;
 import com.poliveira.parallaxrecyclerview.ParallaxRecyclerAdapter;
 import com.squareup.picasso.Picasso;
 import com.technocracy.app.aavartan.Event.Model.Data.Event;
-import com.technocracy.app.aavartan.Event.Model.MockEventProvider;
+import com.technocracy.app.aavartan.Event.Model.RetrofitEventProvider;
 import com.technocracy.app.aavartan.Event.Presenter.EventPresenter;
 import com.technocracy.app.aavartan.Event.Presenter.EventPresenterImpl;
 import com.technocracy.app.aavartan.R;
@@ -72,7 +72,7 @@ public class EventActivity extends AppCompatActivity implements EventView {
         progressBar = (ProgressBar) findViewById(R.id.progress_bar_event);
         recyclerView = (RecyclerView) findViewById(R.id.event_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        presenter = new EventPresenterImpl(this, new MockEventProvider(), this);
+        presenter = new EventPresenterImpl(this, new RetrofitEventProvider(), this);
         db = new DatabaseHandler(getApplicationContext());
         presenter.getEvents(eventSetId);
     }
