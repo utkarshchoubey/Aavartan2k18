@@ -35,11 +35,14 @@ public class AttractionPresenterImpl implements AttractionPresenter {
             @Override
             public void onSuccess(AttractionData body) {
                 view.showProgressBar(false);
-                if (body.isSuccess()) {
-                    view.showAttractions(body.getAttractionList());
-                } else {
-                    view.showAttractionsFromDatabase();
-                }
+               if(body!=null)
+               {
+                   if (body.isSuccess()) {
+                       view.showAttractions(body.getAttractionList());
+                   } else {
+                       view.showAttractionsFromDatabase();
+                   }
+               }
             }
         });
     }
