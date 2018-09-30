@@ -79,7 +79,7 @@ public class NotificationUtils {
                 }
             }
             else {
-                Bitmap bitmap2 = getBitmapFromURL("https://beta.aavartan.org/assets/main/img/aavartan-logo.png");
+                Bitmap bitmap2 = getBitmapFromURL("http://aavartan.org/images/Aavartan.png");
                 showBigNotification(bitmap2, mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound);
             }
         }

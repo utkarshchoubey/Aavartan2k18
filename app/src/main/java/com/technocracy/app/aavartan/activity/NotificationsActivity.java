@@ -10,12 +10,15 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.technocracy.app.aavartan.R;
@@ -90,10 +93,11 @@ public class NotificationsActivity extends AppCompatActivity {
         swipeRefreshLayout.setRefreshing(true);
 
         StringRequest strReq = new StringRequest(Request.Method.POST,
-                "https://beta.aavartan.org/app.android.notifications", new Response.Listener<String>() {
+                "https://aavartan.org:8000/app-android-notifications", new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
+                //Log.d("ayush","No problem here!");
                 swipeRefreshLayout.setRefreshing(false);
                 try {
                     JSONObject jsonResponse = new JSONObject(response);
@@ -113,6 +117,7 @@ public class NotificationsActivity extends AppCompatActivity {
                             notifications.setMessage(jsonObject.getString("message"));
                             notifications.setImageUrl(jsonObject.getString("image_url"));
                             notifications.setCreatedAt(jsonObject.getString("created_at"));
+                            Log.d("ayush",jsonObject.getString("created_at"));
                             db.addNotification(notifications);
                         }
                         notificationsList = db.getAllNotifications();
@@ -129,7 +134,8 @@ public class NotificationsActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Snackbar.make(findViewById(R.id.relativeLayout), getResources().getString(R.string.no_internet_error), Snackbar.LENGTH_LONG).show();
+                //Snackbar.make(findViewById(R.id.relativeLayout), getResources().getString(R.string.no_internet_error), Snackbar.LENGTH_LONG).show();
+                //Log.d("ayush","Problem here!");
                 DatabaseHandler db = new DatabaseHandler(NotificationsActivity.this);
                 notificationsList = db.getAllNotifications();
                 mAdapter = new NotificationAdapter(notificationsList, NotificationsActivity.this);
@@ -145,6 +151,9 @@ public class NotificationsActivity extends AppCompatActivity {
             }
         };
         // Adding request to request queue
+        int socketTimeout = 3000000;//30 seconds - change to what you want
+        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+        strReq.setRetryPolicy(policy);
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
