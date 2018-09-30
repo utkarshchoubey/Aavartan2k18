@@ -21,8 +21,6 @@ android {
         config {
             keyAlias 'mohit'
             keyPassword 'technocracy2015'
-            //storeFile file('C:/Users/divya/Documents/Android/Keystores/dextra.jks')
-            //storeFile file('C:/Users/MOHIT/AndroidStudioProjects/OfficialKey.jks')
             storePassword 'technocracy2015'
         }
         lintOptions {
