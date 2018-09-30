@@ -33,6 +33,9 @@ import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import yanzhikai.textpath.AsyncTextPathView;
+import yanzhikai.textpath.SyncTextPathView;
+
 public class MainActivity extends AppCompatActivity {
     private static final int ACTIVITY_NUM = 0;
     private SessionManager sessionManager;
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private SimpleDateFormat dateFormat;
     private SQLiteHandler sqLiteHandler;
     private Intent intent;
+    private AsyncTextPathView text;
     private String intent_name[] = {"Gallery", "Sponsors", "Contacts", "App Team", "About Us", "Vigyaan"};
     private int icons[] = {R.drawable.ic_photo_library_black_24dp, R.drawable.spons, R.drawable.ic_account_box_24dp,
             R.drawable.ic_group_black_24dp, R.drawable.ic_accessibility_black_24dp, R.drawable.ic_highlight_black_24dp};
@@ -48,12 +52,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final Typewriter tv = (Typewriter) findViewById(R.id.typewriter);
-        final Typewriter tv1 = (Typewriter) findViewById(R.id.typewriter1);
+     //   final Typewriter tv = (Typewriter) findViewById(R.id.typewriter);
+   //    final Typewriter tv1 = (Typewriter) findViewById(R.id.typewriter1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new MyTimerTask(), 1200, 5000);
+     //   Timer timer = new Timer();
+     //   timer.scheduleAtFixedRate(new MyTimerTask(), 1200, 5000);
+
+        text =(AsyncTextPathView)findViewById(R.id.atpv_1);
+        text.startAnimation(0,1);
         dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         currentDateString = dateFormat.format(Calendar.getInstance().getTime());
         sessionManager = new SessionManager(getApplicationContext());
@@ -193,23 +200,23 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    public class MyTimerTask extends TimerTask {
+   /*public class MyTimerTask extends TimerTask {
 
         @Override
         public void run() {
             MainActivity.this.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    final Typewriter tv = (Typewriter) findViewById(R.id.typewriter);
+                  //  final Typewriter tv = (Typewriter) findViewById(R.id.typewriter);
                     final Typewriter tv1 = (Typewriter) findViewById(R.id.typewriter1);
-                    tv.setText(" ");
-                    tv.setCharacterDelay(150);
-                    tv.animateText("IMAGINE IMPROVE IMPLEMENT");
                     tv1.setText(" ");
                     tv1.setCharacterDelay(150);
-                    tv1.animateText("ERA OF DIGITALIZATION");
+                    tv1.animateText("IMAGINE IMPROVE IMPLEMENT");
+                    //tv1.setText(" ");
+                    //tv1.setCharacterDelay(150);
+                    //tv1.animateText("ERA OF DIGITALIZATION");
                 }
             });
         }
-    }
+    }*/
 }

@@ -5,7 +5,7 @@
     android:id="@+id/relativeLayout_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="@drawable/image"
     tools:context=".activity.MainActivity">
 
     <FrameLayout
@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="?attr/actionBarSize"
         android:layout_marginTop="?attr/actionBarSize"
-        android:background="#000">
+        android:background="@drawable/image">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -73,28 +73,31 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/text"
+                android:text="IMAGINE IMPROVE IMPLEMENT"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="400dp"
                 android:gravity="center"
-                android:textColor="#80D8FF"
+                android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/text"
-                android:layout_width="match_parent"
+            <yanzhikai.textpath.AsyncTextPathView
+                android:id="@+id/atpv_1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="78dp"
-                android:gravity="center"
-                android:text="AAVARTAN'18"
-                android:textColor="@color/white"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                app:duration="2500"
+                app:showPainter="true"
+                app:text="AAVARTAN 18"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="50dp"
+                app:repeat="RESTART"
+                app:paintStrokeColor="@color/white"
+                app:pathStrokeColor="@color/white"
+                app:textInCenter="true"
+                app:textSize="40sp"
+                android:layout_gravity="center_horizontal"
+                />
+
         </RelativeLayout>
     </FrameLayout>
 
@@ -112,7 +115,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="#000"
+                android:background="@drawable/image"
                 app:titleTextColor="#00FFFFFF" />
 
 
