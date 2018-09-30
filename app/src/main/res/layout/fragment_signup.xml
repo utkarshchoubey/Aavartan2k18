@@ -15,7 +15,7 @@
         android:fillViewport="true"
         android:isScrollContainer="true">
     <LinearLayout
-        android:background="@drawable/image"
+        android:background="#15161d"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -23,18 +23,18 @@
             android:layout_width="match_parent"
             android:layout_height="53dp"
             android:layout_marginTop="25dp"
-            android:textColorHint="@color/white">
+            android:textColorHint="@color/yellow3">
         <EditText
             android:id="@+id/first_name"
             android:inputType="text"
-            android:drawableStart="@drawable/ic_person_black_24dp"
-            android:drawableLeft="@drawable/ic_person_black_24dp"
-            android:textColor="@color/white"
+            android:drawableStart="@drawable/user2"
+            android:drawableLeft="@drawable/user2"
+            android:textColor="@color/yellow3"
             android:layout_marginTop="70dp"
             android:drawablePadding="10dp"
             android:layout_gravity="center"
             android:hint="First Name"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/yellow3"
             android:padding="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content" />
@@ -42,18 +42,18 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:textColorHint="@color/white">
+            android:textColorHint="@color/yellow3">
         <EditText
             android:id="@+id/last_name"
             android:inputType="text"
-            android:drawableStart="@drawable/ic_person_black_24dp"
-            android:drawableLeft="@drawable/ic_person_black_24dp"
-            android:textColor="@color/white"
+            android:drawableStart="@drawable/user2"
+            android:drawableLeft="@drawable/user2"
+            android:textColor="@color/yellow3"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:hint="Last Name"
             android:drawablePadding="10dp"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/yellow3"
             android:padding="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content" />
@@ -61,17 +61,17 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:textColorHint="@color/white">
+            android:textColorHint="@color/yellow3">
         <EditText
             android:id="@+id/college"
             android:inputType="text"
-            android:drawableStart="@drawable/ic_view_array_black_24dp"
-            android:drawableLeft="@drawable/ic_view_array_black_24dp"
-            android:textColor="@color/white"
+            android:drawableStart="@drawable/mortarboard"
+            android:drawableLeft="@drawable/mortarboard"
+            android:textColor="@color/yellow3"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:hint="College Name"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/yellow3"
             android:drawablePadding="10dp"
             android:padding="10dp"
             android:layout_width="300dp"
@@ -80,12 +80,12 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:textColorHint="@color/white">
+            android:textColorHint="@color/yellow3">
         <EditText
             android:id="@+id/email"
             android:inputType="textEmailAddress"
-            android:drawableStart="@drawable/ic_markunread_black_24dp"
-            android:drawableLeft="@drawable/ic_markunread_black_24dp"
+            android:drawableStart="@drawable/email2"
+            android:drawableLeft="@drawable/email2"
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
@@ -99,17 +99,17 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:textColorHint="@color/white">
+            android:textColorHint="@color/yellow3">
             <EditText
                 android:id="@+id/phone"
                 android:inputType="phone"
-                android:drawableStart="@drawable/ic_local_phone_black_24dp"
-                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
-                android:textColor="@color/white"
+                android:drawableStart="@drawable/smartphone"
+                android:drawableLeft="@drawable/smartphone"
+                android:textColor="@color/yellow3"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:hint="Phone Number"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/yellow3"
                 android:drawablePadding="10dp"
                 android:padding="10dp"
                 android:layout_width="300dp"
@@ -118,17 +118,17 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:textColorHint="@color/white">
+            android:textColorHint="@color/yellow3">
         <EditText
             android:id="@+id/password0"
             android:inputType="textPassword"
-            android:drawableStart="@drawable/ic_vpn_key_black_24dp"
-            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
-            android:textColor="@color/white"
+            android:drawableStart="@drawable/key2"
+            android:drawableLeft="@drawable/key2"
+            android:textColor="@color/yellow3"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:hint="Password"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/yellow3"
             android:drawablePadding="10dp"
             android:padding="10dp"
             android:layout_width="300dp"
@@ -137,63 +137,43 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:textColorHint="@color/white">
+            android:textColorHint="@color/yellow3">
         <EditText
             android:id="@+id/password1"
             android:inputType="textPassword"
-            android:drawableStart="@drawable/ic_vpn_key_black_24dp"
-            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
-            android:textColor="@color/white"
+            android:drawableStart="@drawable/key2"
+            android:drawableLeft="@drawable/key2"
+            android:textColor="@color/yellow3"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:hint="Retype Password"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/yellow3"
             android:drawablePadding="10dp"
             android:padding="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content" />
         </android.support.design.widget.TextInputLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Captcha"
-            android:textSize="25dp"/>
+
         <ImageView
             android:layout_width="wrap_content"
             android:id="@+id/capimg"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
-        <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="53dp"
-                android:textColorHint="@color/white">
-                <EditText
-                    android:id="@+id/captcha"
-                    android:inputType="text"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"
-                    android:layout_gravity="center"
-                    android:hint="Enter Captcha"
-                    android:textColorHint="@color/white"
-                    android:padding="10dp"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
+
         <Button
             android:id="@+id/bRegister"
-            android:textSize="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="100dp"
-            android:textColor="@color/colorPrimary"
-            android:background="@drawable/button_bg_rounded_corners"
-            android:text="SIGN UP"
-            android:padding="10dp"
-            android:layout_gravity="center"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/scrollView"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:padding="10dp"
+            android:text="SIGN UP"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
         </LinearLayout>
     </ScrollView>
 
