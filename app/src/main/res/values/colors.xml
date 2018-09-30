@@ -28,6 +28,7 @@
     <color name="frame">@android:color/black</color>
     <color name="inset">#9000</color>
     <color name="yellow3">#a7862a</color>
+    <color name="yellow2">#5F4C0B</color>
     <color name="blue">#7733B5E5</color>
     <color name="gallery_item">#67000000</color>
     <color name="lightback">#fff7e2</color>

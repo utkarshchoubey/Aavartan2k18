@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".1"
-        android:background="@color/grey"
+        android:background="#000"
         android:layout_alignParentBottom="true"
         app:itemIconTint="@drawable/nav_item_colors"
         app:itemTextColor="@drawable/nav_item_colors"
