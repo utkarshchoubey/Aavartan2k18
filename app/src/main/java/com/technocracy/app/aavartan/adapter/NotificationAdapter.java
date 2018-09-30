@@ -69,7 +69,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         try {
             Date currentDate = dateFormat.parse(currentDateString);
             Date notifDate = dateFormat.parse(notifTime);
-            long differenceInMS = currentDate.getTime() - notifDate.getTime();
+            long differenceInMS = currentDate.getTime() - notifDate.getTime() - 19800000;
             long differenceInSecs = TimeUnit.MILLISECONDS.toSeconds(differenceInMS);
             if (differenceInSecs < 60) {
                 notifTimeTextView.setText("Just now");

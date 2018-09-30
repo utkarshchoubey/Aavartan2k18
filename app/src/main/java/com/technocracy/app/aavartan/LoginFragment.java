@@ -114,7 +114,7 @@ public class LoginFragment extends Fragment {
         showDialog();
 
         StringRequest strReq = new StringRequest(Request.Method.POST,
-                "https://beta.aavartan.org/app.android.login", new Response.Listener<String>() {
+                "http://aavartan.org:8000/app-android-login", new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
@@ -277,7 +277,7 @@ public class LoginFragment extends Fragment {
         String tag_string_req = "req_fcm_token_reg";
 
         StringRequest strReq = new StringRequest(com.android.volley.Request.Method.POST,
-                "https://beta.aavartan.org/app.android.token", new Response.Listener<String>() {
+                "http://aavartan.org:8000/app-android-token", new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
