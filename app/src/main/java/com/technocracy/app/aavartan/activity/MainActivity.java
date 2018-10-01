@@ -46,9 +46,9 @@ public class MainActivity extends AppCompatActivity {
     private Intent intent;
     private AsyncTextPathView text;
     private String intent_name[] = {"Gallery", "Sponsors", "Contacts", "App Team", "About Us", "Vigyaan"};
-    private String subnormal_text[] = {"Here the exciting pics of aavartan!!", "Supporting us in our vision", "We are here!",
+    private String subnormal_text[] = {"Some of the exciting pics of aavartan!!", "Supporting us in our vision", "We are here!",
             "Team behind this master piece", "Our history, present and future", "The Science Exhibition"};
-    private int icons[] = {R.drawable.ic_photo_library_black_24dp, R.drawable.spons, R.drawable.ic_account_box_24dp,
+    private int icons[] = {R.drawable.ic_photo_library_black_24dp, R.drawable.ic_pan_tool_black_24dp, R.drawable.ic_account_box_24dp,
             R.drawable.ic_group_black_24dp, R.drawable.ic_accessibility_black_24dp, R.drawable.ic_highlight_black_24dp};
 
     @Override
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
                     .rotateImage(true).subTypeface(Typeface.SERIF)
                     .imagePadding(new Rect(2, 2, 2, 2))
                     .textGravity(Gravity.CENTER)
-                    .rippleEffect(true).normalColor(R.color.black).textGravity(Gravity.CENTER).textSize(15).maxLines(2);
+                    .rippleEffect(true).normalColor(R.color.yellow3).textGravity(Gravity.CENTER).textSize(15).maxLines(2);
             bmb.addBuilder(builder);
         }
 

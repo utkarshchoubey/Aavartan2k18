@@ -38,7 +38,7 @@
                 android:layout_below="@+id/thumbnail"
                 android:background="@color/grey"
                 android:gravity="center_horizontal"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/yellow3"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 />

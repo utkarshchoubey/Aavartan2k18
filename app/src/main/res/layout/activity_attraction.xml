@@ -23,7 +23,7 @@
             android:layout_height="?attr/actionBarSize"
             android:backgroundTint="@color/lightback"
             android:theme="@style/ThemeOverlay.AppCompat.Light"
-            app:titleTextColor="@color/white">
+            app:titleTextColor="@color/title">
 
             </android.support.v7.widget.Toolbar>
         <View
