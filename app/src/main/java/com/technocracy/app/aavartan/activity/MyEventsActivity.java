@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -18,8 +17,6 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -112,7 +109,7 @@ public class MyEventsActivity extends AppCompatActivity {
         swipeRefreshLayout.setRefreshing(true);
 
         StringRequest strReq = new StringRequest(Request.Method.GET,
-                "http://aavartan.org:8000/app-android-registered-events/" + String.valueOf(user.getUser_id()), new Response.Listener<String>() {
+                App.REGISTERED_EVENTS_URL + String.valueOf(user.getUser_id()), new Response.Listener<String>() {
             //String.valueOf(user.getUser_id())
             @Override
             public void onResponse(String response) {

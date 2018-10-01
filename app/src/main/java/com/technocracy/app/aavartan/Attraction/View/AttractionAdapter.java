@@ -1,4 +1,3 @@
-
 package com.technocracy.app.aavartan.Attraction.View;
 
 import android.content.Context;
@@ -34,6 +33,7 @@ public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.My
         View view = inflater.inflate(R.layout.row_attraction, parent, false);
         return new MyViewHolder(view);
     }
+
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         Attraction i = item.get(position);
@@ -48,7 +48,7 @@ public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.My
             @Override
             public void onError() {
                 App.hideProgressBar(holder.progressBar);
-             }
+            }
         });
         holder.name.setText(i.getName());
         Log.d("abhi", "name" + i.getName());

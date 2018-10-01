@@ -5,42 +5,42 @@ xmlns:card_view="http://schemas.android.com/apk/res-auto"
 android:id="@+id/leaderboard_card"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
-android:layout_marginLeft="25dp"
 android:layout_margin="5dp"
+    android:layout_marginLeft="25dp"
 android:layout_marginRight="25dp"
 android:alpha="0.5"
-card_view:cardCornerRadius="6dp"
-android:foreground="?android:attr/selectableItemBackground">
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="6dp">
     <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:background="@color/lightback"
-    android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
     <LinearLayout
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:orientation="vertical">
         <TextView
             android:id="@+id/username_leaderboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:text="Event Name"
-            android:textColor="@color/colorPrimaryDark"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:gravity="center_horizontal" />
+            android:textColor="@color/black" />
         <TextView
             android:id="@+id/user_level_leaderboard"
             android:layout_width="match_parent"
-            android:textColor="@color/colorPrimaryDark"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:text="Event Date"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:gravity="center_horizontal" />
+            android:textColor="@color/black" />
     </LinearLayout>
 </RelativeLayout>
 </android.support.v7.widget.CardView>

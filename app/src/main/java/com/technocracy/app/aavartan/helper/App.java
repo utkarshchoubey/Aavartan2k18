@@ -10,12 +10,12 @@ import com.technocracy.app.aavartan.R;
 
 public class App {
     //EndPoints
-    public static final String REGISTER_FCM_GENERAL_TOKEN_URL = "http://aavartan.org/appApi_2Ksixteen/saveGeneralFCMToken.php";
-    public static final String REGISTER_FCM_TOKEN_URL = "http://aavartan.org/appApi_2Ksixteen/registerFCMToken.php";
+    public static final String REGISTER_FCM_GENERAL_TOKEN_URL = "http://aavartan.org:8000/appApi_2Ksixteen/saveGeneralFCMToken.php";
+    public static final String REGISTER_FCM_TOKEN_URL = "http://aavartan.org:8000/appApi_2Ksixteen/registerFCMToken.php";
 
-    public static final String REGISTER_USER_URL = "http://aavartan.org/appApi_2Ksixteen/register.php";
-    public static final String LOGIN_URL = "http://aavartan.org/appApi_2Ksixteen/login.php";
-    public static final String FORGOT_PASSWORD_URL = "http://aavartan.org/appApi_2Ksixteen/forgetPassword.php";
+    public static final String REGISTER_USER_URL = "http://aavartan.org:8000/appApi_2Ksixteen/register.php";
+    public static final String LOGIN_URL = "http://aavartan.org:8000/appApi_2Ksixteen/login.php";
+    public static final String FORGOT_PASSWORD_URL = "http://aavartan.org:8000/appApi_2Ksixteen/forgetPassword.php";
 
     public static final String ATTRACTIONS_URL = "app-android-attractions";
 
@@ -33,7 +33,6 @@ public class App {
     public static final String MetaPDF = "https://aavartan.org/pages/vigyaan/meta.pdf";
     public static final String MiningPDF = "https://aavartan.org/pages/vigyaan/mining.pdf";
     public static final String MCAPDF = "https://aavartan.org/pages/vigyaan/mca.pdf";
-    //    public static final String EcellPDF = "https://aavartan.org/pages/vigyaan/ecell.pdf";
     public static final String GoGreenPDF = "https://aavartan.org/pages/vigyaan/GoGreen.pdf";
 
 
@@ -49,8 +48,9 @@ public class App {
     public static final String TECHNICAL_EVENT = "app-android-events/3";
     public static final String ROBOTICS_EVENT = "app-android-events/4";
     public static final String SPONSORS_URL = "app-android-sponsors";
-    public static final String EVENT_REGISTER = "app-android-event.register";
-    public static final String CONTACT_APP = "app-android-android.team";
+    public static final String EVENT_REGISTER = "app-android-event-register";
+    public static final String CONTACT_APP = "app-android-android-team";
+    public static final String REGISTERED_EVENTS_URL = "http://aavartan.org:8000/app-android-registered-events/";
     public static String LinkPDF;
     public static String Base_Url = "http://aavartan.org:8000/";
 

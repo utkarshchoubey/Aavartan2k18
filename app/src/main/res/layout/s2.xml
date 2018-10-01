@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <RelativeLayout
-    android:layout_height="match_parent"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+        android:layout_height="match_parent">
 
 
     <LinearLayout
@@ -35,7 +34,7 @@
             android:layout_marginTop="5dp"
             android:padding="5dp"
             android:text="TechnoCracy is the Student Technical committee of NIT Raipur.
-The Organizer of Largest Tech-fest of Central India ,AAvartan."
+The Organizer of Largest Tech-fest of Central India ,Aavartan."
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="25dp" />
