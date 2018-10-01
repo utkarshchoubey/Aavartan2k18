@@ -20,21 +20,21 @@ public class App {
     public static final String ATTRACTIONS_URL = "app-android-attractions";
 
     //Vigyaan
-    public static final String ArchiPDF = "https://aavartan.org/vigyaan-assets/archi.pdf";
-    public static final String BioMedPDF = "https://aavartan.org/vigyaan-assets/biomedical.pdf";
-    public static final String BioTechPDF = "https://aavartan.org/vigyaan-assets/biotech.PDF";
-    public static final String ChemPDF = "https://aavartan.org/vigyaan-assets/chemical.pdf";
-    public static final String CivilPDF = "https://aavartan.org/vigyaan-assets/civil.pdf";
-    public static final String CSEPDF = "https://aavartan.org/vigyaan-assets/cse.pdf";
-    public static final String ElecPDF = "https://aavartan.org/vigyaan-assets/electrical.pdf";
-    public static final String ElexPDF = "https://aavartan.org/vigyaan-assets/etc.pdf";
-    public static final String ITPDF = "https://aavartan.org/vigyaan-assets/it.pdf";
-    public static final String MechPDF = "https://aavartan.org/vigyaan-assets/mechanical.pdf";
-    public static final String MetaPDF = "https://aavartan.org/vigyaan-assets/meta.pdf";
-    public static final String MiningPDF = "https://aavartan.org/vigyaan-assets/mining.pdf";
-    public static final String MCAPDF = "https://aavartan.org/vigyaan-assets/mca.pdf";
-    public static final String EcellPDF = "https://aavartan.org/vigyaan-assets/ecell.pdf";
-    public static final String GoGreenPDF = "https://aavartan.org/vigyaan-assets/green.pdf";
+    public static final String ArchiPDF = "http://aavartan.org/pages/vigyaan/archi.pdf";
+    public static final String BioMedPDF = "https://aavartan.org/pages/vigyaan/biomed.pdf";
+    public static final String BioTechPDF = "https://aavartan.org/pages/vigyaan/biotech.pdf";
+    public static final String ChemPDF = "https://aavartan.org/pages/vigyaan/chemical.pdf";
+    public static final String CivilPDF = "https://aavartan.org/pages/vigyaan/civil.pdf";
+    public static final String CSEPDF = "https://aavartan.org/pages/vigyaan/cse.pdf";
+    public static final String ElecPDF = "https://aavartan.org/pages/vigyaan/electrical.pdf";
+    public static final String ElexPDF = "https://aavartan.org/pages/vigyaan/electronic.pdf";
+    public static final String ITPDF = "https://aavartan.org/pages/vigyaan/it.pdf";
+    public static final String MechPDF = "https://aavartan.org/pages/vigyaan/mech.pdf";
+    public static final String MetaPDF = "https://aavartan.org/pages/vigyaan/meta.pdf";
+    public static final String MiningPDF = "https://aavartan.org/pages/vigyaan/mining.pdf";
+    public static final String MCAPDF = "https://aavartan.org/pages/vigyaan/mca.pdf";
+    //    public static final String EcellPDF = "https://aavartan.org/pages/vigyaan/ecell.pdf";
+    public static final String GoGreenPDF = "https://aavartan.org/pages/vigyaan/GoGreen.pdf";
 
 
     public static final int NOTIFICATION_ID = 100;
