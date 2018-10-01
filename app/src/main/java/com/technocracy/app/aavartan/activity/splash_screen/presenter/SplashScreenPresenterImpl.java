@@ -8,7 +8,7 @@ import com.technocracy.app.aavartan.activity.splash_screen.models.data.SplashScr
 import com.technocracy.app.aavartan.activity.splash_screen.view.SplashScreenView;
 
 
-public class SplashScreenPresenterImpl implements SplashScreenPresenter {
+public class SplashScreenPresenterImpl implements SplashScreenPresenterInter {
 
     private static final String LOG_TAG = "SplashScreenPresenter";
     private SplashScreenView splashScreenView;
