@@ -73,7 +73,7 @@ public class ContactsAdapter extends BaseAdapter {
         canvas.drawPaint(paint);
         holder.contactImageView.setImageBitmap(bitmap);
         App.showProgressBar(holder.progressBar);
-        Picasso.with(context).load(App.Base_Url + contactList.get(position).getImageUrl()).placeholder(R.drawable.avartan_logo100).into(holder.contactImageView, new Callback() {
+        Picasso.with(context).load(App.Base_Url + contactList.get(position).getImageUrl()).placeholder(R.drawable.logo_welcome).into(holder.contactImageView, new Callback() {
             @Override
             public void onSuccess() {
                 App.hideProgressBar(holder.progressBar);

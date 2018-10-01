@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -35,7 +34,8 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="53dp"
-                android:textColorHint="@color/yellow3">
+                android:textColorHint="@color/yellow3"
+                app:hintTextAppearance="@style/MyAppearance">
 
                 <EditText
                     android:id="@+id/etUsername"
@@ -45,20 +45,22 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:drawableLeft="@drawable/email"
-                    android:drawableStart="@drawable/email"
                     android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/email"
                     android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:padding="10dp"
                     android:textColor="@color/yellow3"
+                    android:textColorHighlight="@color/yellow3"
                     android:textColorHint="@color/yellow3" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="53dp"
+                android:layout_weight="0.08"
                 android:textColorHint="@color/yellow3"
-                android:layout_weight="0.08">
+                app:hintTextAppearance="@style/MyAppearance">
 
                 <EditText
                     android:id="@+id/etPassword"
@@ -68,12 +70,13 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:drawableLeft="@drawable/ky"
-                    android:drawableStart="@drawable/ky"
                     android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ky"
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:padding="10dp"
                     android:textColor="@color/yellow3"
+                    android:textColorHighlight="@color/yellow3"
                     android:textColorHint="@color/yellow3" />
             </android.support.design.widget.TextInputLayout>
 
@@ -99,13 +102,13 @@
                 android:textSize="18dp" />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/yellow3"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Credentials for both app and website are same"/>
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Credentials for both app and website are same"
+                android:textColor="@color/yellow3"
+                android:textSize="15dp" />
         </LinearLayout>
     </LinearLayout>
 

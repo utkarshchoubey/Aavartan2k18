@@ -25,12 +25,13 @@ public class MockAttractionProvider implements AttractionProvider{
 
     public AttractionData getMockData() {
         List<Attraction> list = new ArrayList<>();
-        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", ""));
-        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", ""));
-        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", ""));
-        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", ""));
-        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", ""));
-        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", ""));
+        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", "http://pluspng.com/img-png/dirt-bike-wheelie-png-motorcycle-stunt-riding-wheelie-drawing-chopper-motocross-900.jpg"));
+        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", "http://pluspng.com/img-png/dirt-bike-wheelie-png-motorcycle-stunt-riding-wheelie-drawing-chopper-motocross-900.jpg"));
+        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", "http://pluspng.com/img-png/dirt-bike-wheelie-png-motorcycle-stunt-riding-wheelie-drawing-chopper-motocross-900.jpg"));
+        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", "http://pluspng.com/img-png/dirt-bike-wheelie-png-motorcycle-stunt-riding-wheelie-drawing-chopper-motocross-900.jpg"));
+        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", "http://pluspng.com/img-png/dirt-bike-wheelie-png-motorcycle-stunt-riding-wheelie-drawing-chopper-motocross-900.jpg"));
+        list.add(new Attraction("Bike Stunts", "Bikers to do stunts", "http://www.aavartan.org/img/thumb-04.jpg", "", "http://pluspng.com/img-png/dirt-bike-wheelie-png-motorcycle-stunt-riding-wheelie-drawing-chopper-motocross-900.jpg"));
+        mockData = new AttractionData(true, list);
         return mockData;
     }
 }
