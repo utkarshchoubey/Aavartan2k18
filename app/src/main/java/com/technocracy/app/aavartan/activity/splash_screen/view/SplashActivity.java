@@ -66,16 +66,16 @@ public class SplashActivity extends AppCompatActivity  implements SplashScreenVi
 
     @Override
     public void showMessage(String message) {
-        Toaster.showShortMessage(context,message);
+        //Toaster.showShortMessage(context,message);
     }
 
     @Override
     public void showProgressBar(boolean show) {
         if (show) {
-            progressBar.setVisibility(View.VISIBLE);
+//            progressBar.setVisibility(View.VISIBLE);
         }
         else{
-            progressBar.setVisibility(View.GONE);
+         //   progressBar.setVisibility(View.GONE);
         }
     }
 
