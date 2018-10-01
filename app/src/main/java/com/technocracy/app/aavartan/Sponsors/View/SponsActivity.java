@@ -12,7 +12,6 @@ import android.widget.ProgressBar;
 import com.technocracy.app.aavartan.R;
 import com.technocracy.app.aavartan.Sponsors.Model.Data.Sponsor;
 import com.technocracy.app.aavartan.Sponsors.Model.MockSponsProvider;
-import com.technocracy.app.aavartan.Sponsors.Model.RetrofitSponsProvider;
 import com.technocracy.app.aavartan.Sponsors.Presenter.SponsPresenter;
 import com.technocracy.app.aavartan.Sponsors.Presenter.SponsPresenterImpl;
 
@@ -41,7 +40,7 @@ public class SponsActivity extends AppCompatActivity implements SponsView {
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 //        presenter = new SponsPresenterImpl(new RetrofitSponsProvider(), this, this);
-        presenter = new SponsPresenterImpl(new RetrofitSponsProvider(), this, this);
+        presenter = new SponsPresenterImpl(new MockSponsProvider(), this, this);
         presenter.getSpons();
     }
 

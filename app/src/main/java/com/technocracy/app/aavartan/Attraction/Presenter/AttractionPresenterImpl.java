@@ -2,6 +2,7 @@ package com.technocracy.app.aavartan.Attraction.Presenter;
 
 
 import android.content.Context;
+import android.util.Log;
 
 import com.technocracy.app.aavartan.Attraction.AttractionCallback;
 import com.technocracy.app.aavartan.Attraction.Model.AttractionProvider;
@@ -35,6 +36,7 @@ public class AttractionPresenterImpl implements AttractionPresenter {
             @Override
             public void onSuccess(AttractionData body) {
                 view.showProgressBar(false);
+                Log.d("abhi", "In the onSuccess of getAttractions()");
                if(body!=null)
                {
                    if (body.isSuccess()) {

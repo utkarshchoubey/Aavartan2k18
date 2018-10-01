@@ -35,7 +35,7 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.SimpleView
         size2 = sponsorList[1].size();
         size3 = sponsorList[2].size();
         COUNT = size1 + size2 + size3;
-        Log.d("Aavartan2k17", "" + size1 + "  " + size2 + " " + size3);
+        Log.d("Aavartan2k18", "" + size1 + "  " + size2 + " " + size3);
         mItems = new ArrayList<>(COUNT);
         for (int i = 0; i < COUNT; i++) {
             addItem(i);
@@ -65,7 +65,7 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.SimpleView
         holder.imageView.getLayoutParams().width = width;
         holder.imageView.requestLayout();
 
-        Picasso.with(mContext).load(App.Base_Url + sponsorList[category].get(position).getImage_url()).placeholder(R.drawable.avartan_logo100).
+        Picasso.with(mContext).load(App.Base_Url + sponsorList[category].get(position).getImage_url()).placeholder(R.drawable.logo_welcome).
                 into(holder.imageView, new Callback() {
                     @Override
                     public void onSuccess() {
