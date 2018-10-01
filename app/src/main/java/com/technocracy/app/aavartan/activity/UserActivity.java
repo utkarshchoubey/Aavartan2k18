@@ -179,11 +179,10 @@ public class UserActivity extends AppCompatActivity {
 
                         break;
                     case R.id.btn4:
-                        intent = new Intent(UserActivity.this, AccountActivity.class);
-                        startActivity(intent);
-                        overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
-
-                        break;
+                   //     intent = new Intent(UserActivity.this, AccountActivity.class);
+                     //   startActivity(intent);
+                       // overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
+                        break ;
                     case R.id.btn5:
                         intent = new Intent(UserActivity.this, ScheduleActivity.class);
                         startActivity(intent);
