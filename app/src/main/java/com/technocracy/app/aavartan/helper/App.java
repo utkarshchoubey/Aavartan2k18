@@ -51,6 +51,7 @@ public class App {
     public static final String CONTACT_APP = "app-android-android-team";
     public static final String REGISTERED_EVENTS_URL = "http://aavartan.org:8000/app-android-registered-events/";
     public static final String FORGOT_PASSWORD_URL_1 = "http://aavartan.org:8000/app-android-forgot";
+    public static final String NOTIFICATION_URL = "http://aavartan.org:8000/app-android-notifications";
     public static String LinkPDF;
     public static String Base_Url = "http://aavartan.org:8000/";
 

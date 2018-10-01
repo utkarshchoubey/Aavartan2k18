@@ -43,7 +43,7 @@ public class Tab2 extends Fragment implements ScheduleView {
         recyclerView.setLayoutManager(mLayoutManager);
         //scheduleList = db.getScheduleDay2Items();
         progressBar = (ProgressBar) v.findViewById(R.id.progress_bar_tab2);
-        presenter = new SchedulePresenterImpl(new MockScheduleProvider(), this, getActivity());
+        presenter = new SchedulePresenterImpl(new RetrofitScheduleProvider(), this, getActivity());
         presenter.getSchedule("8");
         return v;
     }

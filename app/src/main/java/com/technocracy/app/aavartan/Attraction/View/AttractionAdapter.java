@@ -38,7 +38,8 @@ public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.My
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         Attraction i = item.get(position);
         App.showProgressBar(holder.progressBar);
-        Picasso.with(context).load(i.getImgUrl()).into(holder.img, new com.squareup.picasso.Callback() {
+        Picasso.with(context).load(i.getImgUrl()).placeholder(R.drawable.logo_welcome).
+                into(holder.img, new com.squareup.picasso.Callback() {
 
             @Override
             public void onSuccess() {

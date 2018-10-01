@@ -2,7 +2,6 @@ package com.technocracy.app.aavartan.Schedule.Presenter;
 
 import android.content.Context;
 
-import com.technocracy.app.aavartan.R;
 import com.technocracy.app.aavartan.Schedule.Model.Data.ScheduleData;
 import com.technocracy.app.aavartan.Schedule.Model.ScheduleProvider;
 import com.technocracy.app.aavartan.Schedule.ScheduleCallback;
@@ -22,7 +21,7 @@ public class SchedulePresenterImpl implements SchedulePresenter {
     @Override
     public void getSchedule(String day) {
         view.showProgressBar(true);
-        if (day.equals("7")) {
+        if (day.equals("6")) {
             provider.getSchedule1(new ScheduleCallback() {
                 @Override
                 public void onSuccess(ScheduleData body) {
