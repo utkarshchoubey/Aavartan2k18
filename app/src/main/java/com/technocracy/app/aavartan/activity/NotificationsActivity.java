@@ -93,7 +93,7 @@ public class NotificationsActivity extends AppCompatActivity {
         swipeRefreshLayout.setRefreshing(true);
 
         StringRequest strReq = new StringRequest(Request.Method.POST,
-                "https://aavartan.org:8000/app-android-notifications", new Response.Listener<String>() {
+                App.NOTIFICATION_URL, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {

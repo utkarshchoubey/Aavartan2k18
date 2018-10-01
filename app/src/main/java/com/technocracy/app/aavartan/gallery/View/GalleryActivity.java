@@ -49,17 +49,6 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
         scrollGalleryView = (ScrollGalleryView) findViewById(R.id.scroll_gallery_view);
 //        setupWindowAnimations();
     }
-
-    /*private void setupWindowAnimations() {
-        try {
-            Explode explode = new Explode();
-            explode.setDuration(1000);
-            getWindow().setEnterTransition(explode);
-            getWindow().setExitTransition(explode);
-        } catch (Exception e) {
-            showMessage("Some Error!!");
-        }
-    }*/
     @Override
     public void showProgressBar(boolean b) {
         if (b)
