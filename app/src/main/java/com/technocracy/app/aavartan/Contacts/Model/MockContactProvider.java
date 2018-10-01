@@ -27,8 +27,13 @@ public class MockContactProvider implements ContactProvider {
     }
 
     @Override
-    public void getAppTeam(ContactCallback callback) {
-
+    public void getAppTeam(final ContactCallback callback) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                callback.onSuccess(getMockContactData());
+            }
+        }, 500);
     }
 
     public ContactData getMockContactData() {

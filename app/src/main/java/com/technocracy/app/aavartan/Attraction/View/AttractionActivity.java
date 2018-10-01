@@ -16,7 +16,6 @@ import android.widget.ProgressBar;
 
 import com.technocracy.app.aavartan.Attraction.Model.Data.Attraction;
 import com.technocracy.app.aavartan.Attraction.Model.MockAttractionProvider;
-import com.technocracy.app.aavartan.Attraction.Model.RetrofitAttractionProvider;
 import com.technocracy.app.aavartan.Attraction.Presenter.AttractionPresenter;
 import com.technocracy.app.aavartan.Attraction.Presenter.AttractionPresenterImpl;
 import com.technocracy.app.aavartan.Event.View.EventListActivity;
@@ -55,7 +54,7 @@ public class AttractionActivity extends AppCompatActivity implements Eventkeys.A
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         final BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         BottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
-    //    bottomNavigationView.setItemBackgroundResource(R.color.lightback);
+        //    bottomNavigationView.setItemBackgroundResource(R.color.lightback);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -118,7 +117,7 @@ public class AttractionActivity extends AppCompatActivity implements Eventkeys.A
 
     @Override
     public void onBackPressed() {
-        Intent intent1=new Intent(AttractionActivity.this,MainActivity.class);
+        Intent intent1 = new Intent(AttractionActivity.this, MainActivity.class);
         startActivity(intent1);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
@@ -148,7 +147,7 @@ public class AttractionActivity extends AppCompatActivity implements Eventkeys.A
     public void showAttractions(List<Attraction> AttractionList) {
         db.deleteAllAttractions();
         attractionList = AttractionList;
-        for(Attraction i:attractionList)
+        for (Attraction i : attractionList)
             db.addAttraction(i);
         Adap = new AttractionAdapter(this, attractionList);
         rCyclerView.setAdapter(Adap);

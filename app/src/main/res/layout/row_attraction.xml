@@ -51,6 +51,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/white"></RelativeLayout>
+        android:layout_height="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/yellow3"></RelativeLayout>
 </LinearLayout>
