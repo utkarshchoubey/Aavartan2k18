@@ -51,7 +51,7 @@ public class NotificationUtils {
             return;
         Log.d("ayush","showNotificationMessage method");
         // notification icon
-        final int icon = R.mipmap.ic_launcher;
+        final int icon = R.drawable.logo;
 
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         final PendingIntent resultPendingIntent =
@@ -139,7 +139,7 @@ public class NotificationUtils {
                 .setSound(alarmSound)
                 .setStyle(bigPictureStyle)
                 .setWhen(getTimeMilliSec(timeStamp))
-                .setSmallIcon(R.mipmap.ic_launcher)
+                .setSmallIcon(R.drawable.logo)
                 .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
                 .setContentText(Html.fromHtml(message))
                 .build();

@@ -7,6 +7,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -44,6 +45,10 @@ public class EventDetailsActivity extends AppCompatActivity implements RegisterE
         eventDetail = data.getString("event_description");
         String title = data.getString("event_name");
         event_id = "" + data.getInt("id");
+
+        Log.d("abhi", title + " " + event_id + " " + eventDetail);
+
+
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(getResources().getColor(R.color.title));

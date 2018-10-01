@@ -209,12 +209,12 @@ public class LoginFragment extends Fragment {
                             App.FORGOT_PASSWORD_URL_1, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            Log.d("ayush", "Login Response: " + response.toString());
+                            Log.d("ayush", "Forgot Response: " + response.toString());
                             hideDialog();
                             try {
                                 JSONObject jsonResponse = new JSONObject(response);
-                                boolean error = jsonResponse.getBoolean("error");
-                                if (!error) {
+                                boolean success = jsonResponse.getBoolean("success");
+                                if (success) {
                                     Log.d("ayush", "no error");
                                     Snackbar.make(getActivity().findViewById(R.id.login), "Please check your e-mail for resetting password.", Snackbar.LENGTH_LONG)
                                             .setAction("Action", null).show();
