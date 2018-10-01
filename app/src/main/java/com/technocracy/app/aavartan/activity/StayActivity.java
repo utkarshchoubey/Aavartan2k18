@@ -28,7 +28,7 @@ public class StayActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         String stayText = "For the outstation students, we have arranged accommodation.\n\n\n" +
-                "For any furthur query or details contact :\n\nShubham Gupta : \n+919098162297";
+                "For any furthur query or details contact :\n\nAnkit Tripathi : \n7224921100";
         stayTextView = (TextView) findViewById(R.id.stay_text);
         stayTextView.setText(stayText);
     }

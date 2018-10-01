@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/toolbar1"
-            android:background="@color/white" />
+            android:background="@color/title" />
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

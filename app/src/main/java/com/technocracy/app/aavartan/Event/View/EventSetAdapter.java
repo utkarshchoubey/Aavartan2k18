@@ -20,7 +20,7 @@ public class EventSetAdapter extends RecyclerView.Adapter<EventSetAdapter.EventT
 
 
     private static Context mContext;
-    private int img[] = {R.drawable.fun_1, R.drawable.manage_1, R.drawable.coding_events1, R.drawable.robo_1};
+    private int img[] = {R.drawable.fun1, R.drawable.manage11, R.drawable.coding_events1, R.drawable.robo1};
     private String events[] = {"Fun", "Managerial", "Technical", "Robotics"};
     private Intent intent;
     private View view;
