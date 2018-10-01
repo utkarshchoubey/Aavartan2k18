@@ -1,37 +1,33 @@
 package com.technocracy.app.aavartan.activity.splash_screen.view;
 
-import android.content.Intent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-
 import com.technocracy.app.aavartan.R;
-
-import com.crashlytics.android.Crashlytics;
+import com.technocracy.app.aavartan.activity.MainActivity;
+import com.technocracy.app.aavartan.activity.WelcomeActivity;
 import com.technocracy.app.aavartan.activity.splash_screen.models.RetrofitSplashScreenProvider;
 import com.technocracy.app.aavartan.activity.splash_screen.models.data.SplashScreenData;
-import com.technocracy.app.aavartan.activity.splash_screen.presenter.SplashScreenPresenterInter;
 import com.technocracy.app.aavartan.activity.splash_screen.presenter.SplashScreenPresenterImpl;
-import com.technocracy.app.aavartan.activity.WelcomeActivity;
+import com.technocracy.app.aavartan.activity.splash_screen.presenter.SplashScreenPresenterInter;
 
 public class SplashActivity extends AppCompatActivity  implements SplashScreenView{
 
+    ProgressBar progressBar;
     private Context context;
     private SplashScreenPresenterInter splashScreenPresenter;
     private Handler handler;
-    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,10 +67,10 @@ public class SplashActivity extends AppCompatActivity  implements SplashScreenVi
     @Override
     public void showProgressBar(boolean show) {
         if (show) {
-//            progressBar.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.VISIBLE);
         }
         else{
-         //   progressBar.setVisibility(View.GONE);
+            progressBar.setVisibility(View.GONE);
         }
     }
 
