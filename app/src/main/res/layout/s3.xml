@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <RelativeLayout android:background="@color/black"
+    <RelativeLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -37,7 +37,7 @@
             android:padding="5dp"
             android:text="Started in 2007 with the aim of inspiring technology, innovation and scientific thinking, AAVARTAN is now accepted as Central India’s Largest Science and Technological fest with a footfall of more than 10,000 yearly and a reach of over 150+ Indian Colleges."
             android:textAlignment="center"
-            android:textColor="@color/yellow3"
+            android:textColor="@color/white"
             android:textSize="25dp" />
 
     </LinearLayout>
