@@ -35,9 +35,6 @@ public class EventSetAdapter extends RecyclerView.Adapter<EventSetAdapter.EventT
 
     @Override
     public void onBindViewHolder(final EventTypeHolder holder, final int position) {
-//        int width = (int) App.getScreenWidth(mContext);
-//        holder.imageView.getLayoutParams().height = width / 2;
-//        holder.imageView.getLayoutParams().width = width;
         holder.imageView.requestLayout();
         Picasso.with(mContext).load("www.abhi.co.in").placeholder(img[position]).
                 into(holder.imageView, new Callback() {
@@ -93,7 +90,6 @@ public class EventSetAdapter extends RecyclerView.Adapter<EventSetAdapter.EventT
             super(view);
             name = (TextView) view.findViewById(R.id.event_type);
             imageView = (ImageView) view.findViewById(R.id.event_set_img);
-
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

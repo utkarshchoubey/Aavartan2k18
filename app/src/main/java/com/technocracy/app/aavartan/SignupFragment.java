@@ -61,8 +61,6 @@ public class SignupFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-
         View v = inflater.inflate(R.layout.fragment_signup, container, false);
         return v;
     }
@@ -81,10 +79,6 @@ public class SignupFragment extends Fragment {
         password0EditText = (EditText) getView().findViewById(R.id.password0);
         password1EditText = (EditText) getView().findViewById(R.id.password1);
         emailEditText = (EditText) getView().findViewById(R.id.email);
-// <<<<<<< login_signup_updated
-
-// =======
-//     //    captcha = (EditText) getView().findViewById(R.id.captcha);
         capimg = (ImageView) getView().findViewById(R.id.capimg);
 // >>>>>>> master
         Picasso.with(getContext())

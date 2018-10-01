@@ -3,6 +3,7 @@ package com.technocracy.app.aavartan.Event.View;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,9 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
 
     public EventAdapter(Context context, List<Event> eventList) {
 //        Log.d("AAVARTAN17","IN ADAPTER CONSTRUCTOR");
+        for (int i = 0; i < eventList.size(); i++) {
+            Log.d("abhi", "" + eventList.get(i).getName() + " " + eventList.get(i).getEventId());
+        }
         this.context = context;
         this.eventList = eventList;
     }
@@ -35,7 +39,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-//        Log.d("AAVARTAN17","IN BIND VIEW HOLDER"+position);
+        Log.d("AAVARTAN17", "IN BIND VIEW HOLDER" + position);
         final Event event = eventList.get(position);
         String time = event.getTime();
         String venue = event.getVenue();
@@ -50,6 +54,10 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
         holder.txt.setText(event.getName());
         holder.txt1.setText("Date : " + date + "\nTime:" + time +
                 "\nVenue:" + venue);
+
+        Log.d("abhi", "" + event.getEventId() + " " + event.getName());
+
+
         Picasso.with(context).load(event.getImage_url()).placeholder(R.drawable.avartan_logo100).into(holder.img);
         view.setOnClickListener(new View.OnClickListener() {
             @Override

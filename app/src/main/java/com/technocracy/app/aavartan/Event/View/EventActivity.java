@@ -51,7 +51,6 @@ public class EventActivity extends AppCompatActivity implements EventView {
 //        recyclerHeader = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_event, viewGroup, false);
         if (eventSetId.equals("1")) {
             eventSetId = "fun";
-            headerImage.setImageResource(R.drawable.civil1);
             toolbarTitle = "   Fun";
         } else if (eventSetId.equals("2")) {
             eventSetId = "manager";
@@ -92,6 +91,9 @@ public class EventActivity extends AppCompatActivity implements EventView {
     }
 
     private ParallaxRecyclerAdapter<Event> createAdapter(final List<Event> eventList) {
+
+        Log.d("abhi", eventList.size() + "");
+
         ParallaxRecyclerAdapter<Event> stringAdapter = new ParallaxRecyclerAdapter<Event>(eventList) {
             @Override
             public void onBindViewHolderImpl(RecyclerView.ViewHolder viewHolder, ParallaxRecyclerAdapter parallaxRecyclerAdapter, int i) {
@@ -100,6 +102,7 @@ public class EventActivity extends AppCompatActivity implements EventView {
                 String time = event.getTime();
                 String venue = event.getVenue();
                 String date = event.getDate();
+                Log.d("abhi", "The events are : " + event.getEventId() + " " + event.getName());
                 if (time == null)
                     time = " 9:00AM-5:15PM ";
                 if (venue == null)
@@ -107,12 +110,12 @@ public class EventActivity extends AppCompatActivity implements EventView {
                 if (date == null)
                     date = " 6-7 Oct";
                 holder.txt.setText(event.getName());
-                holder.txt1.setText("Date : " + date + "\nTime:" + time +
-                        "\nVenue:" + venue);
+                holder.txt1.setText("Date : " + date + "\nTime:" + time + "\nVenue:" + venue);
                 Picasso.with(EventActivity.this).load(event.getImage_url()).placeholder(R.drawable.avartan_logo100).into(holder.img);
-                view.setOnClickListener(new View.OnClickListener() {
+                holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        Log.d("abhi", "The events are : " + event.getEventId() + " " + event.getName());
                         Intent i = new Intent(EventActivity.this, EventDetailsActivity.class);
                         i.putExtra("id", event.getEventId());
                         i.putExtra("event_name", event.getName());
@@ -147,6 +150,8 @@ public class EventActivity extends AppCompatActivity implements EventView {
                 //TODO: implement toolbar alpha. See README for details
             }
         });
+
+
         return stringAdapter;
     }
 

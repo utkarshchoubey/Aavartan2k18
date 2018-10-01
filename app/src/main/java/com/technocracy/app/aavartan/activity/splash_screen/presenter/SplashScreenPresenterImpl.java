@@ -22,7 +22,6 @@ public class SplashScreenPresenterImpl implements SplashScreenPresenter {
     @Override
     public void requestSplash() {
         splashScreenView.showProgressBar(true);
-
         splashScreenProvider.requestSplash(new SplashScreenCallBack() {
             @Override
             public void onSuccess(SplashScreenData splashScreenData) throws PackageManager.NameNotFoundException {

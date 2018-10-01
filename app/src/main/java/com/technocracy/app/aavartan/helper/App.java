@@ -42,10 +42,10 @@ public class App {
     public static final String SCHEDULE1 = "app-android-schedule/7";
     public static final String CONTACT = "app-android-contacts";
     public static final String SCHEDULE2 = "app-android-schedule/8";
-    public static final String FUN_EVENT = "app-android-events/1";
+    public static final String FUN_EVENT = "app-android-events/4";
     public static final String MANAGERIAL_EVENT = "app-android-events/2";
-    public static final String TECHNICAL_EVENT = "app-android-events/3";
-    public static final String ROBOTICS_EVENT = "app-android-events/4";
+    public static final String TECHNICAL_EVENT = "app-android-events/1";
+    public static final String ROBOTICS_EVENT = "app-android-events/3";
     public static final String SPONSORS_URL = "app-android-sponsors";
     public static final String EVENT_REGISTER = "app-android-event-register";
     public static final String CONTACT_APP = "app-android-android-team";
