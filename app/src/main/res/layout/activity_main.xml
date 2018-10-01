@@ -75,7 +75,7 @@
                 android:id="@+id/atpv_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:duration="3000"
+                app:duration="3700"
                 app:showPainter="true"
                 app:text="AAVARTAN 18"
                 android:layout_marginTop="80dp"
