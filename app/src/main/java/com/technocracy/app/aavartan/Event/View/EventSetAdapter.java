@@ -8,19 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 import com.technocracy.app.aavartan.R;
-import com.technocracy.app.aavartan.helper.App;
 
 public class EventSetAdapter extends RecyclerView.Adapter<EventSetAdapter.EventTypeHolder> {
 
 
     private static Context mContext;
-    private int img[] = {R.drawable.fun1, R.drawable.manage11, R.drawable.coding_events1, R.drawable.robo1};
+    private int img[] = {R.drawable.fun_events, R.drawable.manage11, R.drawable.tech_event1, R.drawable.robo2};
     private String events[] = {"Fun", "Managerial", "Technical", "Robotics"};
     private Intent intent;
     private View view;
