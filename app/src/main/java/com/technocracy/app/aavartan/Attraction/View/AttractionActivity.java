@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.ProgressBar;
 
 import com.technocracy.app.aavartan.Attraction.Model.Data.Attraction;
-import com.technocracy.app.aavartan.Attraction.Model.MockAttractionProvider;
+import com.technocracy.app.aavartan.Attraction.Model.RetrofitAttractionProvider;
 import com.technocracy.app.aavartan.Attraction.Presenter.AttractionPresenter;
 import com.technocracy.app.aavartan.Attraction.Presenter.AttractionPresenterImpl;
 import com.technocracy.app.aavartan.Event.View.EventListActivity;
@@ -94,7 +94,8 @@ public class AttractionActivity extends AppCompatActivity implements Eventkeys.A
             else
                 item.setChecked(false);
         }
-        presenter = new AttractionPresenterImpl(new MockAttractionProvider(), this, this);
+//        presenter = new AttractionPresenterImpl(new MockAttractionProvider(), this, this);
+        presenter = new AttractionPresenterImpl(new RetrofitAttractionProvider(), this, this);
         presenter.getAttractions();
     }
 
