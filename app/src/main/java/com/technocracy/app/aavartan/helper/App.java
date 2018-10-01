@@ -16,7 +16,6 @@ public class App {
     public static final String REGISTER_USER_URL = "http://aavartan.org:8000/appApi_2Ksixteen/register.php";
     public static final String LOGIN_URL = "http://aavartan.org:8000/appApi_2Ksixteen/login.php";
     public static final String FORGOT_PASSWORD_URL = "http://aavartan.org:8000/appApi_2Ksixteen/forgetPassword.php";
-
     public static final String ATTRACTIONS_URL = "app-android-attractions";
 
     //Vigyaan
@@ -51,6 +50,7 @@ public class App {
     public static final String EVENT_REGISTER = "app-android-event-register";
     public static final String CONTACT_APP = "app-android-android-team";
     public static final String REGISTERED_EVENTS_URL = "http://aavartan.org:8000/app-android-registered-events/";
+    public static final String FORGOT_PASSWORD_URL_1 = "http://aavartan.org:8000/app-android-forgot";
     public static String LinkPDF;
     public static String Base_Url = "http://aavartan.org:8000/";
 
