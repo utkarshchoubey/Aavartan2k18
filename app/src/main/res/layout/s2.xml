@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:padding="5dp"
-            android:text="TechnoCracy is the Student Technical committee of NIT Raipur.
+            android:text="TechnoCracy is the Student Technical Committee of NIT Raipur.
 The Organizer of Largest Tech-fest of Central India ,Aavartan."
             android:textAlignment="center"
             android:textColor="@color/white"

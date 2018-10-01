@@ -34,7 +34,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:scaleType="fitXY"
-            android:src="@drawable/back_img" />
+            android:src="@drawable/text1" />
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
