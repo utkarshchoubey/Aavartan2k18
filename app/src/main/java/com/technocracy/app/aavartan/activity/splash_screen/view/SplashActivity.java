@@ -1,51 +1,58 @@
 package com.technocracy.app.aavartan.activity.splash_screen.view;
 
+import android.content.Intent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
+
 
 import com.technocracy.app.aavartan.R;
-import com.technocracy.app.aavartan.activity.WelcomeActivity;
+
+import com.crashlytics.android.Crashlytics;
 import com.technocracy.app.aavartan.activity.splash_screen.models.RetrofitSplashScreenProvider;
 import com.technocracy.app.aavartan.activity.splash_screen.models.data.SplashScreenData;
-import com.technocracy.app.aavartan.activity.splash_screen.presenter.SplashScreenPresenter;
+import com.technocracy.app.aavartan.activity.splash_screen.presenter.SplashScreenPresenterInter;
 import com.technocracy.app.aavartan.activity.splash_screen.presenter.SplashScreenPresenterImpl;
+import com.technocracy.app.aavartan.activity.WelcomeActivity;
 
 public class SplashActivity extends AppCompatActivity  implements SplashScreenView{
 
-    ProgressBar progressBar;
     private Context context;
-    private SplashScreenPresenter splashScreenPresenter;
+    private SplashScreenPresenterInter splashScreenPresenter;
     private Handler handler;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         progressBar=(ProgressBar)findViewById(R.id.progressBar);
+        initialise();
         Thread mythread=new Thread(){
             @Override
             public void run() {
                 try {
-                    sleep(1500);
-                    initialise();
-                    splashScreenPresenter.requestSplash();
+                    sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                    Intent intent=new Intent(getApplicationContext(),WelcomeActivity.class);
+                    Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(intent);
                     finish();
                 }
             }
         };
+        splashScreenPresenter.requestSplash();
         mythread.start();
     }
 
@@ -59,8 +66,7 @@ public class SplashActivity extends AppCompatActivity  implements SplashScreenVi
 
     @Override
     public void showMessage(String message) {
-//        Toaster.showShortMessage(context,message);
-    }
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();    }
 
     @Override
     public void showProgressBar(boolean show) {
@@ -68,7 +74,7 @@ public class SplashActivity extends AppCompatActivity  implements SplashScreenVi
 //            progressBar.setVisibility(View.VISIBLE);
         }
         else{
-//            progressBar.setVisibility(View.GONE);
+         //   progressBar.setVisibility(View.GONE);
         }
     }
 
@@ -164,6 +170,7 @@ public class SplashActivity extends AppCompatActivity  implements SplashScreenVi
                 finish();
             }
         }, 300);
+
     }
 
     @Override
@@ -177,6 +184,7 @@ public class SplashActivity extends AppCompatActivity  implements SplashScreenVi
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 splashScreenPresenter.requestSplash();
+
             }
         });
         ad.show();
