@@ -9,7 +9,7 @@ import retrofit2.http.Query;
 
 
 public interface SplashScreenRequestApi {
-    @GET("splash_screen/")
+    @GET("splash_screen_aavartan/")
     Call<SplashScreenData> requestSplash();
 
 }

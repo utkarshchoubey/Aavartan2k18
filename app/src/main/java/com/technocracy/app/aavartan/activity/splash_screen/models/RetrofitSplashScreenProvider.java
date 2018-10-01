@@ -22,7 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitSplashScreenProvider implements  SplashScreenProvider{
 
-    public static final String BASE_URL = "http://18.220.64.65:8111/";
+    public static final String BASE_URL = "http://18.220.64.65:7999/";
     private static final String TAG = "RetrofitSplashScreen";
     private SplashScreenRequestApi splashScreenRequestApi;
     Call<SplashScreenData> call;
