@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private SimpleDateFormat dateFormat;
     private SQLiteHandler sqLiteHandler;
     private Intent intent;
-    private AsyncTextPathView text;
+    private AsyncTextPathView text,text1,text2,text3;
     private String intent_name[] = {"Gallery", "Sponsors", "Contacts", "App Team", "About Us", "Vigyaan"};
     private String subnormal_text[] = {"Some of the exciting pics of aavartan!!", "Supporting us in our vision", "We are here!",
             "Team behind this master piece", "Our history, present and future", "The Science Exhibition"};
@@ -55,15 +55,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-     //   final Typewriter tv = (Typewriter) findViewById(R.id.typewriter);
-   //    final Typewriter tv1 = (Typewriter) findViewById(R.id.typewriter1);
+        final Typewriter tv = (Typewriter) findViewById(R.id.typewriter1);
+        final Typewriter tv1 = (Typewriter) findViewById(R.id.typewriter2);
+        final Typewriter tv2 = (Typewriter) findViewById(R.id.typewriter3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-     //   Timer timer = new Timer();
-     //   timer.scheduleAtFixedRate(new MyTimerTask(), 1200, 5000);
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new MyTimerTask(), 1200, 5000);
 
         text =(AsyncTextPathView)findViewById(R.id.atpv_1);
         text.startAnimation(0,1);
+       // text1 =(AsyncTextPathView)findViewById(R.id.atpv_2);
+        //text1.startAnimation(0,1);
+       // text2 =(AsyncTextPathView)findViewById(R.id.atpv_3);
+       // text2.startAnimation(0,1);
+        //text3 =(AsyncTextPathView)findViewById(R.id.atpv_4);
+       // text3.startAnimation(0,1);
         dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         currentDateString = dateFormat.format(Calendar.getInstance().getTime());
         sessionManager = new SessionManager(getApplicationContext());
@@ -204,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-   /*public class MyTimerTask extends TimerTask {
+   public class MyTimerTask extends TimerTask {
 
         @Override
         public void run() {
@@ -213,14 +220,22 @@ public class MainActivity extends AppCompatActivity {
                 public void run() {
                   //  final Typewriter tv = (Typewriter) findViewById(R.id.typewriter);
                     final Typewriter tv1 = (Typewriter) findViewById(R.id.typewriter1);
+                    final Typewriter tv2 = (Typewriter) findViewById(R.id.typewriter2);
+                    final Typewriter tv3 = (Typewriter) findViewById(R.id.typewriter3);
                     tv1.setText(" ");
                     tv1.setCharacterDelay(150);
-                    tv1.animateText("IMAGINE IMPROVE IMPLEMENT");
+                    tv1.animateText("IMAGINE");
+                    tv2.setText(" ");
+                    tv2.setCharacterDelay(150);
+                    tv2.animateText("IMPROVE");
+                    tv3.setText(" ");
+                    tv3.setCharacterDelay(150);
+                    tv3.animateText("IMPLEMENT");
                     //tv1.setText(" ");
                     //tv1.setCharacterDelay(150);
                     //tv1.animateText("ERA OF DIGITALIZATION");
                 }
             });
         }
-    }*/
+    }
 }
