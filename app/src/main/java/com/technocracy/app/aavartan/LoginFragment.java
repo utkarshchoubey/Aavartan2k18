@@ -25,8 +25,6 @@ import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.gson.JsonArray;
-import com.technocracy.app.aavartan.activity.LoginActivity;
 import com.technocracy.app.aavartan.activity.UserActivity;
 import com.technocracy.app.aavartan.api.User;
 import com.technocracy.app.aavartan.helper.App;
@@ -47,7 +45,6 @@ import java.util.Map;
  */
 public class LoginFragment extends Fragment {
 
-    public LoginFragment(){}
     private SessionManager session;
     private SQLiteHandler db;
     private EditText etUsername;
@@ -56,6 +53,8 @@ public class LoginFragment extends Fragment {
     private TextView forgotpassword;
     private ProgressDialog pDialog;
 
+    public LoginFragment() {
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -207,7 +206,7 @@ public class LoginFragment extends Fragment {
                     // login user
                     String tag_string_req = "req_forgotPassword";
                     StringRequest strReq = new StringRequest(Request.Method.POST,
-                            "https://beta.aavartan.org/app.android.forgot", new Response.Listener<String>() {
+                            App.FORGOT_PASSWORD_URL_1, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             Log.d("ayush", "Login Response: " + response.toString());
