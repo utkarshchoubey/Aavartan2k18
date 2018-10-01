@@ -11,12 +11,13 @@
         android:layout_margin="5dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:backgroundTint="@color/blue">
+        android:backgroundTint="#A1a7862a">
 
     <LinearLayout
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
+        android:padding="5dp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
